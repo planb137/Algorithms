@@ -22,12 +22,12 @@ public class StackDemo {
 class StackL {
     private LinkedList list = new LinkedList();
     public void push(Object v) {
-        list.addFirst(v);
+        list.addLast(v);
     }
     public Object top() {
-        return list.getFirst();
+        return list.getLast();
     }
     public Object pop() {
-        return list.removeFirst();
+        return list.removeLast();
     }
 }
