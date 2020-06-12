@@ -7,7 +7,7 @@ package cn.nuaa.edu;
  */
 public class DynamicProgramming {
     public static void main(String[] args) {
-        int [] x = {5,10,25,1};
+        int [] x = {5,10,25};
         System.out.println(coins1(x,1000));
         System.out.println(countWays(x,1000));
     }
