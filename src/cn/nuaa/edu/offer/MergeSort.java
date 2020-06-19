@@ -41,7 +41,7 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-        int[] test = {2,4,7,1,9,2,90,33};
+         int[] test = {2,4,7,1,9,2,90,33};
          int[] rs= merge_sort(test);
          for (int x : rs){
              System.out.print(x+" ");
