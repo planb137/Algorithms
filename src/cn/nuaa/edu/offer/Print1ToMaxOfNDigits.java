@@ -16,7 +16,7 @@ public class Print1ToMaxOfNDigits {
         }
         for(int i=n-1;i>=0;i--) {
             while(digit[i]!='9') {
-                int m=0;
+                int m= 0;
                 digit[m]++;
                 while(m<n-1 && digit[m]>'9') {
                     digit[m]='0';
