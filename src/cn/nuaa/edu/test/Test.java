@@ -1,5 +1,6 @@
 package cn.nuaa.edu.test;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
@@ -29,6 +30,22 @@ public class Test {
         System.out.println(Str.matches("www(.*)")); //true
         System.out.println('\0');*/
 
+      /*  double x = 1e-6;
+        System.out.println(x);*/
+
+        //testHashSet();
+
+        //isDoubleEqual(0.0000001d,0d);
+
+        /*double a = 0.03;
+        double b = 0.04;
+        System.out.println(a+b);*/
+
+        //BigDecimal通常使用String构造方法
+        BigDecimal a =new BigDecimal(0.1);
+        System.out.println("a values is:"+a);
+    }
+    public static void testHashSet(){
         HashSet<Integer> set = new HashSet<Integer>();
         set.add(1);
         set.add(2);
@@ -44,5 +61,10 @@ public class Test {
             System.out.println(iterator.next());
         }
         ArrayList<Integer> list = new ArrayList<Integer>();
+    }
+    public static void isDoubleEqual(double d1,double d2){
+        double dis=1e-6;
+        System.out.println(d1==d2); //直接判断为flase
+        System.out.println(Math.abs(d1-d2)<dis);    //允许一定的误差范围，判断结果为true
     }
 }
