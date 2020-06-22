@@ -12,7 +12,6 @@ public class MergeSort {
         int[] result = new int[len];
         int block, start;
 
-        // 原版代码的迭代次数少了一次，没有考虑到奇数列数组的情况
         for(block = 1; block < len*2; block *= 2) {
             for(start = 0; start <len; start += 2 * block) {
                 int low = start;

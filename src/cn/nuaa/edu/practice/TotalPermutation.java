@@ -1,7 +1,6 @@
-package cn.nuaa.edu.offer;
+package cn.nuaa.edu.practice;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**

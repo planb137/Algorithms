@@ -41,12 +41,20 @@ public class Test {
         //BigDecimal通常使用String构造方法
        /* BigDecimal a =new BigDecimal(0.1);
         System.out.println("a values is:"+a);*/
-        int[] x = new int[10];
+/*        int[] x = new int[10];
         String y = "asadadaad ";
         System.out.println(y.length());
         System.out.println(x.length);
         int a = '0';
-        System.out.println(a);
+        System.out.println(a);*/
+/*        String str = "study";
+        char[] x = str.toCharArray();
+        System.out.println(x);
+        System.out.println(String.valueOf(x)+"bu");*/
+        String x = Long.toBinaryString(Long.MAX_VALUE);
+        System.out.println(x.length());
+
+
     }
 
     public static void testHashSet(){

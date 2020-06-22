@@ -1,14 +1,16 @@
-package cn.nuaa.edu.offer;
+package cn.nuaa.edu;
+
+import java.util.Arrays;
 
 /**
  * @author planb
- * @date 2020/6/22 16:25
+ * @date 2020/5/14 16:29
  * 备注：
  */
-public class MyQuickSort {
+public class QuickSort {
     public static int[] qsort(int arr[],int start,int end) {
         int pivot = arr[start];
-        int i = start+1;
+        int i = start;
         int j = end;
         while (i<j) {
             while ((i<j)&&(arr[j]>pivot)) {
@@ -17,10 +19,8 @@ public class MyQuickSort {
             while ((i<j)&&(arr[i]<pivot)) {
                 i++;
             }
-            if (i==j) {
-                int temp = arr[start];
-                arr[start] = arr[i];
-                arr[i] = temp;
+            if ((arr[i]==arr[j])&&(i<j)) {
+                i++;
             } else {
                 int temp = arr[i];
                 arr[i] = arr[j];
@@ -37,7 +37,7 @@ public class MyQuickSort {
     }
 
     public static void main(String[] args) {
-        int arr[] = new int[]{3,1,5,7,9,2,10};
+        int arr[] = new int[]{3,1,2,7,9,5};
         int len = arr.length-1;
         arr=qsort(arr,0,len);
         for (int i:arr) {

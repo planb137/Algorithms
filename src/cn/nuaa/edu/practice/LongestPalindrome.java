@@ -1,4 +1,4 @@
-package cn.nuaa.edu.offer;
+package cn.nuaa.edu.practice;
 
 /**
  * @author planb
