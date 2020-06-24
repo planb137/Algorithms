@@ -18,11 +18,11 @@ public class ThreeSumClosest {
             }
             int j = i+1;
             int k = length-1;
-            while(j<k){
-                int sum = nums[i]+nums[j]+nums[k];
+            while(j < k){
+                int sum = nums[i] + nums[j] + nums[k];
                 int temp = sum-target;
                 if (temp==0){
-                    return temp;
+                    return target;
                 }
                 if(Math.abs(sum-target)<Math.abs(minSum-target)){
                         minSum = sum;
