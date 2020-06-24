@@ -1,4 +1,6 @@
-package cn.nuaa.edu.practice;
+package cn.nuaa.edu.test;
+
+import cn.nuaa.edu.practice.ThreeSumClosest;
 
 /**
  * @author planb
