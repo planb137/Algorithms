@@ -9,11 +9,11 @@ import java.util.Arrays;
  */
 public class ThreeSumClosest {
     public int threeSumClosest(int[] nums, int target) {
-        int minSum = nums[0]+nums[1]+nums[2];
+        int minSum = 10000000;
         int length = nums.length;
         Arrays.sort(nums);
         for (int i = 0 ;i < length ;i++){
-            if (nums[i]==nums[i-1]){
+            if (i>0 && nums[i]==nums[i-1]){
                 continue;
             }
             int j = i+1;
@@ -22,16 +22,24 @@ public class ThreeSumClosest {
                 int sum = nums[i]+nums[j]+nums[k];
                 int temp = sum-target;
                 if (temp==0){
-                    minSum = temp;
                     return temp;
                 }
+                if(Math.abs(sum-target)<Math.abs(minSum-target)){
+                        minSum = sum;
+                }
                 if (temp>0){
-                    k--;
+                    int k0 = k-1;
+                    while (j<k0 && nums[k0]==nums[k]){
+                        k0--;
+                    }
+                    k = k0;
+                } else {
+                    int j0 =j+1;
+                    while(j0<k && nums[j] == nums[j0]){
+                        j0++;
+                    }
+                    j=j0;
                 }
-                if (temp<0){
-                    j++;
-                }
-
             }
         }
         return minSum;
