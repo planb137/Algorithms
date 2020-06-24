@@ -53,7 +53,11 @@ public class Test {
         System.out.println(String.valueOf(x)+"bu");*/
         String x = Long.toBinaryString(Long.MAX_VALUE);
         System.out.println(x.length());
-
+    /*    String   num = "123";
+        int a = 3;
+        System.out.println(a/2);*/
+        int a = '0';
+        System.out.println(a);
 
     }
 
