@@ -56,8 +56,19 @@ public class Test {
     /*    String   num = "123";
         int a = 3;
         System.out.println(a/2);*/
-        int a = '0';
-        System.out.println(a);
+      /*  int a = '0';
+        System.out.println(a);*/
+        HashSet<Integer> set = new HashSet<>();
+        set.add(4);
+        set.add(5);
+        set.add(4);
+        System.out.println(set.contains(6));
+        Iterator<Integer> it = set.iterator();
+        while (it.hasNext()){
+            System.out.println(it.next());
+        }
+
+
 
     }
 
