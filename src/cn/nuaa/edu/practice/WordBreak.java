@@ -16,8 +16,8 @@ public class WordBreak {
                 map.put(s1,true);
             }
             dp[0] = true;
-            for(int i = 1;i<s.length();i++){
-                for (int j=i-1;j<s.length();j++){
+            for(int i = 1;i<=s.length();i++){
+                for (int j=i-1;j>=0;j--){
                     dp[i] =(dp[j] && check(s.substring(j,i)));
                     if (dp[i]){
                         break;
