@@ -62,12 +62,11 @@ public class Test {
         set.add(4);
         set.add(5);
         set.add(4);
-        System.out.println(set.contains(6));
         Iterator<Integer> it = set.iterator();
         while (it.hasNext()){
             System.out.println(it.next());
         }
-
+        System.out.println(set.contains(4));
 
 
     }
