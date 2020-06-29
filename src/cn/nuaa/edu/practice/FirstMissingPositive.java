@@ -14,7 +14,7 @@ public class FirstMissingPositive {
             }
         }
         for(int i = 0;i<length;i++){
-            int num = Math.abs(nums[i]);
+            int num = Math.abs(nums[i]);//这里必须是取绝对值，不然会报错 Index -6 out of bounds for length 4
             if (num <= length){
                 nums[num-1] = - Math.abs(nums[num-1]);
             }
