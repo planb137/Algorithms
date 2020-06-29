@@ -28,11 +28,11 @@ public class EveryMainTest {
 //        System.out.println(new WordBreak().wordBreak(s,list));
         long start,end;
         start = System.currentTimeMillis();
-        Arrays.sort(nums);
-        //int[] x = QuickSortPartition.qsort(nums,0,nums.length-1);
-        for (int temp : nums){
+        //Arrays.sort(nums);
+        int[] x = QuickSortPartition.qsort(nums,0,nums.length-1);
+/*        for (int temp : nums){
             System.out.print (temp+" ");
-        }
+        }*/
         end = System.currentTimeMillis();
 
 
