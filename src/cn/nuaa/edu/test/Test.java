@@ -48,17 +48,20 @@ public class Test {
         int a = '0';
         System.out.println(a);*/
 /*        String str = "study";
+
         char[] x = str.toCharArray();
         System.out.println(x);
         System.out.println(String.valueOf(x)+"bu");*/
-        String x = Long.toBinaryString(Long.MAX_VALUE);
-        System.out.println(x.length());
+/*        String x = Long.toBinaryString(Long.MAX_VALUE);
+        System.out.println(x.length());*/
+
     /*    String   num = "123";
         int a = 3;
         System.out.println(a/2);*/
       /*  int a = '0';
         System.out.println(a);*/
-        HashSet<Integer> set = new HashSet<>();
+
+/*        HashSet<Integer> set = new HashSet<>();
         set.add(4);
         set.add(5);
         set.add(4);
@@ -66,7 +69,18 @@ public class Test {
         while (it.hasNext()){
             System.out.println(it.next());
         }
-        System.out.println(set.contains(4));
+        System.out.println(set.contains(4));*/
+
+        List<ThreadTest> list = new ArrayList<>();
+        ThreadTest[] arr = new ThreadTest[3];
+        arr[0] = new ThreadTest("a",System.currentTimeMillis());
+        arr[1] = new ThreadTest("b",System.currentTimeMillis());
+        arr[2] = new ThreadTest("c",System.currentTimeMillis());
+        list = Arrays.asList(arr);//该方法不适用于基本数据类型
+        arr[0].setName("f");
+        for (ThreadTest tt :list) {
+            System.out.println(tt.getName());
+        }
 
 
     }

@@ -44,14 +44,8 @@ public class SaleTicketUsingJUC {
                 }
             }
         },"A").start();
-        new  Thread(new Runnable() {
-            @Override
-            public void run() {
-                for (int i = 0; i <20 ; i++) {
-                    ticket.saleTicket();
-                }
-            }
-        },"b").start();
+
+        new Thread(() -> { for(int i = 0; i <20 ; i++){ticket.saleTicket();}},"B").start();
         new  Thread(new Runnable() {
             @Override
             public void run() {
