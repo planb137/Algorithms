@@ -22,7 +22,7 @@ class AirCondition2{
             this.notifyAll();
 
     }
-    public void decrement() throws InterruptedException{
+    public synchronized void decrement() throws InterruptedException{
         while(number == 0){
             this.wait();
         }
