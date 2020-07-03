@@ -1,9 +1,6 @@
 package cn.nuaa.edu.juc;
 
-import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 /**
  * @author planb
@@ -20,6 +17,24 @@ public ThreadPoolExecutor(int corePoolSize,
  */
 public class MyThreadPoolDemo {
     public static void main(String[] args) {
+        //打印电脑内核数目 8
+        System.out.println(Runtime.getRuntime().availableProcessors());
+
+        ExecutorService threadPool = new ThreadPoolExecutor(2, 5,
+                2L, TimeUnit.SECONDS,
+                new LinkedBlockingQueue<>(3),
+                Executors.defaultThreadFactory(),
+                new ThreadPoolExecutor.DiscardPolicy());
+        for (int i = 1; i <= 10; i++) {
+            threadPool.execute(()->{
+                System.out.println(Thread.currentThread().getName()+"\t办理业务");
+            });
+        }
+
+    }
+
+
+    public static void initPool() {
         //一个池子有5个固定的线程，
         ExecutorService threadPool1 = Executors.newFixedThreadPool(5);
         ExecutorService threadPool2 = Executors.newSingleThreadExecutor();
