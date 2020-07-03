@@ -9,13 +9,21 @@ import java.util.concurrent.TimeUnit;
  * @author planb
  * @date 2020/7/3 09:24
  * 备注：线程池
+public ThreadPoolExecutor(int corePoolSize,
+    int maximumPoolSize,
+    long keepAliveTime,
+    TimeUnit unit,
+    BlockingQueue<Runnable> workQueue,
+    ThreadFactory threadFactory,
+    RejectedExecutionHandler handler){}
+ *
  */
 public class MyThreadPoolDemo {
     public static void main(String[] args) {
         //一个池子有5个固定的线程，
-        //ExecutorService threadPool = Executors.newFixedThreadPool(5);
-        //ExecutorService threadPool = Executors.newSingleThreadExecutor();
-        ExecutorService threadPool = Executors.newCachedThreadPool();
+        ExecutorService threadPool1 = Executors.newFixedThreadPool(5);
+        ExecutorService threadPool2 = Executors.newSingleThreadExecutor();
+        ExecutorService threadPool  = Executors.newCachedThreadPool();
         try {
             for (int i = 0; i < 10; i++) {
                 try {

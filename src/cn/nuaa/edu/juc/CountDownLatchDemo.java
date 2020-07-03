@@ -31,6 +31,6 @@ public class CountDownLatchDemo {
                 System.out.println(Thread.currentThread().getName()+"\t离开教室");
             }).start();
         }
-        System.out.println(Thread.currentThread().getName()+"\t班长关门走人");
+      //  System.out.println(Thread.currentThread().getName()+"\t班长关门走人");
     }
 }
