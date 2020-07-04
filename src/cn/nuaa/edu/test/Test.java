@@ -2,6 +2,7 @@ package cn.nuaa.edu.test;
 
 import java.math.BigDecimal;
 import java.util.*;
+import java.util.concurrent.*;
 
 /**
  * @author planb
@@ -71,7 +72,7 @@ public class Test {
         }
         System.out.println(set.contains(4));*/
 
-        List<ThreadTest> list = new ArrayList<>();
+/*        List<ThreadTest> list = new ArrayList<>();
         ThreadTest[] arr = new ThreadTest[3];
         arr[0] = new ThreadTest("a",System.currentTimeMillis());
         arr[1] = new ThreadTest("b",System.currentTimeMillis());
@@ -81,7 +82,13 @@ public class Test {
         for (ThreadTest tt :list) {
             System.out.println(tt.getName());
         }
-
+        list.forEach(System.out::println);*/
+        ExecutorService threadPool = new ThreadPoolExecutor(2, 5, 3,
+                TimeUnit.SECONDS, new LinkedBlockingQueue<>(3),
+                Executors.defaultThreadFactory(), new ThreadPoolExecutor.DiscardPolicy());
+        for (int i = 0; i < 9; i++) {
+                threadPool.execute(() ->System.out.println(Thread.currentThread().getName()+"\t "));
+        }
 
     }
 
@@ -92,9 +99,8 @@ public class Test {
         set.add(3);
         set.add(4);
         set.add(5);
-        for (Integer a : set){
-            System.out.println(a);
-        }
+        List<Integer> list1 = Arrays.asList(1, 2, 3, 4);
+        list1.forEach(System.out::println);
 
         Iterator<Integer> iterator = set.iterator();
         while (iterator.hasNext()){

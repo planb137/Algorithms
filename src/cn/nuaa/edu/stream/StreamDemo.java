@@ -2,6 +2,7 @@ package cn.nuaa.edu.stream;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.Callable;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -69,5 +70,11 @@ public class StreamDemo {
         };
         Supplier<String> supplier2 = ()->{return "java 02";};
         System.out.println(supplier2.get());*/
+
+
+        Supplier<String> stringCallable = () -> {
+            return "java";
+        };
+        stringCallable.get();
     }
 }
