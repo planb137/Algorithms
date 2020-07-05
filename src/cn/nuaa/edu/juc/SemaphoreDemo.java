@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class SemaphoreDemo {
     public static void main(String[] args) {
         //模拟资源类，有3个空车位
-        Semaphore semaphore = new Semaphore(1);
+        Semaphore semaphore = new Semaphore(3);
         for (int i = 0; i < 6; i++) {
             new Thread(() -> {
                 try {

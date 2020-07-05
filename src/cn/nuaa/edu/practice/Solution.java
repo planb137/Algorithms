@@ -4,6 +4,7 @@ import jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.HashMap;
 
 /**
  * @author planb
@@ -11,6 +12,9 @@ import java.util.Arrays;
  * 备注：
  */
 public class Solution {
+    public Solution() {
+    }
+
     public String sloution(String s){
         String rs = "";
         if(s.length()<=1){
@@ -35,7 +39,7 @@ public class Solution {
                 }
             }
         }
-
+        HashMap<Object, Object> hashMap = new HashMap<Object, Object>(200,0.6f);
         for (int i = 0; i < s.length()-1; i++) {
             while (n3[i]>n[i]){
                 return s.substring(0, 1)+ new String(n3);

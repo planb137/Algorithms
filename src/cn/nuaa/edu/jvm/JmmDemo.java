@@ -24,9 +24,9 @@ public class JmmDemo {
             }
         },"AAA").start();
         while (myNunmber.number == 10) {
-
-            System.out.println(Thread.currentThread().getName() + "main线程,值：" + myNunmber.number);
         }
+            System.out.println(Thread.currentThread().getName() + "main线程,值：" + myNunmber.number);
+
     }
 
 }

@@ -83,13 +83,22 @@ public class Test {
             System.out.println(tt.getName());
         }
         list.forEach(System.out::println);*/
-        ExecutorService threadPool = new ThreadPoolExecutor(2, 5, 3,
+       /* ExecutorService threadPool = new ThreadPoolExecutor(2, 5, 3,
                 TimeUnit.SECONDS, new LinkedBlockingQueue<>(3),
                 Executors.defaultThreadFactory(), new ThreadPoolExecutor.DiscardPolicy());
         for (int i = 0; i < 9; i++) {
                 threadPool.execute(() ->System.out.println(Thread.currentThread().getName()+"\t "));
-        }
+        }*/
+/*        ConcurrentHashMap<Integer, Object> keySetView = new ConcurrentHashMap<>();
+        keySetView.put(2, 1);
+        keySetView.put(3, 1);
+        keySetView.put(4, 1);
+        keySetView.put(5, 1);*/
 
+        int temp =1;
+        while (temp == 10){
+            System.out.println(temp);
+        }
     }
 
     public static void testHashSet(){
