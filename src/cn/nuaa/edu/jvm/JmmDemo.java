@@ -25,7 +25,12 @@ public class JmmDemo {
         },"AAA").start();
         while (myNunmber.number == 10) {
         }
-            System.out.println(Thread.currentThread().getName() + "main线程,值：" + myNunmber.number);
+        try {
+            Thread.sleep(10000000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println(Thread.currentThread().getName() + "main线程,值：" + myNunmber.number);
 
     }
 
