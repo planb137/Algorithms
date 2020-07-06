@@ -37,7 +37,7 @@ public class ReflectDemo {
         Object zhangsan = constructor2.newInstance("zhangsan ");
         System.out.println(zhangsan);//Student{name='zhangsan ', age=0, addrss='null'}
 
-       Field[] fields = c1.getFields();
+        Field[] fields = c1.getFields();
         Field[] fields2 = c1.getDeclaredFields();
         for (Field f: fields2) {
             System.out.println(f);

@@ -21,9 +21,6 @@ public class AddStringToIntegerArrayList {
         add.invoke(integers, "hello");
         add.invoke(integers, "world");
         System.out.println(integers);
-
-
-
-
+        //integers.forEach(System.out::println);报错java.lang.String cannot be cast to java.lang.Integer
     }
 }
