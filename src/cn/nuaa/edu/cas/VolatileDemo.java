@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 备注：Volatile不保证原子性
  *  原子性：某个线程在执行过程中，中间不可以加阻塞或者被分裂，需要整体，要么失败，要么成功
  *  解决原子性：加synchorized
- *            使用Automic类-AtomicInteger
+ *           使用Automic类-AtomicInteger
  * */
 
 class MyData{
