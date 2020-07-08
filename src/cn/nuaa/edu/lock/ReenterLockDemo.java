@@ -29,6 +29,7 @@ class Phone implements Runnable{
     }
     public void get(){
         lock.lock();
+        //lock.lock();
         try {
             System.out.println(Thread.currentThread().getName() + "\t invoke get()");
             set();
