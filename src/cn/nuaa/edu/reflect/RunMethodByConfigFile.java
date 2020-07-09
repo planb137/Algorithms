@@ -29,8 +29,8 @@ public class RunMethodByConfigFile {
 
         //通过反射来使用配置文件
         Class<?>  c = Class.forName(className);
-        Constructor<?> constructor = c.getDeclaredConstructor();
-        Object obj = constructor.newInstance();
+        Constructor<?> constructor = c.getDeclaredConstructor();//获得构造方法
+        Object obj = constructor.newInstance();//通过构造方法，取得对象的实例
         Method method = c.getDeclaredMethod(methodName);
         method.setAccessible(true);
         method.invoke(obj);
