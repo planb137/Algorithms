@@ -16,7 +16,19 @@ public class User {
         this.userName = userName;
         this.age = age;
     }
-/*public static void main(String[] args) {
+
+    public int getId() {
+        return id;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+    /*public static void main(String[] args) {
         User user = new User();
         user.setAge(11).setId(121).setUserName("张三");
 

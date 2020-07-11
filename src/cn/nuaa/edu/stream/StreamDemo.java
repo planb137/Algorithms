@@ -25,17 +25,17 @@ public class StreamDemo {
         User user4 = new User(14, "d", 28);
         User user5 = new User(16, "e", 26);
         List<User> list = Arrays.asList(user, user2, user3, user4, user5);
-        /*list.stream().filter(u -> {
+        list.stream().filter(u -> {
             return u.getId() % 2 == 0;}).filter( t ->{
                 return t.getAge()>24; }).map(s -> {
                     return s.getUserName().toUpperCase();}).sorted((a,b)->{
                         return -a.compareTo(b);}).limit(1).forEach(System.out::println);
-*/
+
 
         List<String>strings = Arrays.asList("abc", " ", "bc", "efg", "abcd","", "jkl");
         // 获取空字符串的数量
         System.out.println(strings.stream().filter(string -> string.isEmpty()).count());
-       /* Function<String, Integer> function = new Function<String, Integer>() {
+        Function<String, Integer> function = new Function<String, Integer>() {
             @Override
             public Integer apply(String s) {
                 return 1024;
@@ -63,6 +63,7 @@ public class StreamDemo {
         };
         Consumer<String> consumer2 = s ->{System.out.println(s+",nihao ");};
         consumer2.accept("planb");
+
         Supplier<String> supplier =new Supplier<String>(){
             @Override
             public String get() {
@@ -70,12 +71,17 @@ public class StreamDemo {
             }
         };
         Supplier<String> supplier2 = ()->{return "java 02";};
-        System.out.println(supplier2.get());*/
+        System.out.println(supplier2.get());
 
 
         Supplier<String> stringCallable = () -> {
             return "java";
         };
         stringCallable.get();
+
+        Function<Integer,String> func = integer ->{
+            return String.valueOf(integer)+"nihao";
+        };
+        System.out.println(func.apply(1313));
     }
 }
