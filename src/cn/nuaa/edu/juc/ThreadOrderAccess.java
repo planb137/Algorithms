@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * @author planb
  * @date 2020/7/2 10:12
- * 备注：如何进行多线程之间的顺序调用，实现A->B->C（标志位的修改和定位）
+ * 备注：如何进行多线程之间的顺序调用（ReentrantLock，newCondition），实现A->B->C（标志位的修改和定位）
  *    lock与condition配合使用可以精准通知指定线程
  *    实现A打印5次，b打印10次，c打印15次
  */
