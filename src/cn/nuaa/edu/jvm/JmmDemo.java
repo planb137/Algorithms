@@ -6,7 +6,7 @@ package cn.nuaa.edu.jvm;
  * 备注：Jmm 可见行，volatile可以满足（通知机制）
  */
 class MyNunmber{
-     volatile int number = 10;
+    int number = 10;
     public void addTo15(){
         this.number = 15;
     }
