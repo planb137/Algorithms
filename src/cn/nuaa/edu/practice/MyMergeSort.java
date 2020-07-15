@@ -10,7 +10,7 @@ public class MyMergeSort {
         if (l == r) {
             return;
         }
-        int mid = l + (r-l) >> 1;
+        int mid = l + ((r-l) >> 1) ;
         //左边排序
         sort(arr, l, mid);
         //右边排序
@@ -24,7 +24,7 @@ public class MyMergeSort {
         int j = right;
         int k = 0;
 
-        int [] temp = new int[ right - left + 1];
+        int [] temp = new int[ bound - left + 1];
         while (i <= mid && j <= bound ){
             if(nums[i]<nums[j]){
                 temp[k++] = nums[i++];
@@ -38,11 +38,14 @@ public class MyMergeSort {
         while (j <=bound){
             temp[k++] = nums[j++];
         }
+        for (int index = 0; index < temp.length; index++) {
+            nums[left+index] = temp[index];
+        }
     }
     public static void main(String[] args) {
-            int[] test = {4,2,5,7,2,6,7,9};
+            int[] test = {2,4,1,7,4,9,3};
             sort(test, 0, test.length-1);
-        for (int i = 0; i < test.length-1; i++) {
+        for (int i = 0; i < test.length; i++) {
             System.out.print(test[i]+" ");
         }
     }
