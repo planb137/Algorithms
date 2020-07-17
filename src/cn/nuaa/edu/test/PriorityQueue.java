@@ -12,8 +12,8 @@ import java.util.PriorityQueue;
 class PriorityQueueDemo {
     public static void main(String[] args) {
         PriorityQueue priorityQueue = new PriorityQueue(8);
-        PriorityQueue priorityQueue2 = new PriorityQueue<Integer>((o1,o2) -> -o1.compareTo(o2));
-        System.out.println(priorityQueue2.size());
+        PriorityQueue priorityQueue2 = new PriorityQueue<Integer>(4,(o1,o2) -> -o1.compareTo(o2));
+        //System.out.println(priorityQueue2.size());
         PriorityQueue priorityQueue1 = new PriorityQueue<Integer>(7,new Comparator<Integer>(){
             @Override
             public int compare(Integer o1, Integer o2) {
@@ -23,11 +23,14 @@ class PriorityQueueDemo {
         priorityQueue2.add(4);
         priorityQueue2.add(1);
         priorityQueue2.add(3);
+        priorityQueue2.add(9);
+        priorityQueue2.add(2);
         priorityQueue2.add(7);
 
         while (!priorityQueue2.isEmpty()){
             System.out.println(priorityQueue2.poll());
         }
+        System.out.println(Integer.MAX_VALUE+1);
 
        // PriorityQueue<Integer> priorityQueue1 =  new java.util.PriorityQueue<Integer>(8,(o1,o2)->{return o1.compareTo(o2);});
 
