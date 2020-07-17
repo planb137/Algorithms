@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author planb
@@ -15,10 +16,11 @@ public class CountDownLatchDemo {
     public static void main(String[] args) throws InterruptedException {
         CountDownLatch downLatch = new CountDownLatch(6);
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 8; i++) {
             new Thread(() -> {
                 System.out.println(Thread.currentThread().getName()+"\t离开了教室");
                 downLatch.countDown();
+
             }).start();
         }
         downLatch.await();

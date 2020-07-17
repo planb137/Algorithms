@@ -13,7 +13,7 @@ public class CycleBarrierDemo {
         CyclicBarrier cyclicBarrier = new CyclicBarrier(7,()->{
             System.out.println("人数达到！开始开会");
         });
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 7; i++) {
             final int tempInt = i;
             new Thread(() -> {
                 System.out.println(Thread.currentThread().getName()+"\t到达了第:"+tempInt+"人");
