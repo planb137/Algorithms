@@ -36,5 +36,14 @@ public class TestDemo {
         System.out.println(integers.hashCode());
         System.out.println(integers2.hashCode());
 
+        System.out.println("==============================");
+        char[] c = {'2','8','d','3','1'};
+        String s = new String(c);
+        System.out.println(c);
+
+        char[] d = {'2','8','d','3','1'};
+        String s1 = String.valueOf(d);
+        System.out.println(s1);
+
     }
 }
