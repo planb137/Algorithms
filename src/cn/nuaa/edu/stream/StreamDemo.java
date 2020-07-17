@@ -1,6 +1,7 @@
 package cn.nuaa.edu.stream;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -83,5 +84,12 @@ public class StreamDemo {
             return String.valueOf(integer)+"nihao";
         };
         System.out.println(func.apply(1313));
+
+        Collections.sort(list, new Comparator<User>() {
+            @Override
+            public int compare(User o1, User o2) {
+                return o1.getId()- o2.getId();
+            }
+        });
     }
 }
