@@ -18,17 +18,24 @@ public ThreadPoolExecutor(int corePoolSize,
 public class MyThreadPoolDemo {
     public static void main(String[] args) {
         //打印电脑内核数目 8
-        System.out.println(Runtime.getRuntime().availableProcessors());
+       // System.out.println(Runtime.getRuntime().availableProcessors());
 
         ExecutorService threadPool = new ThreadPoolExecutor(2, 5,
                 2L, TimeUnit.SECONDS,
                 new LinkedBlockingQueue<>(3),
                 Executors.defaultThreadFactory(),
-                new ThreadPoolExecutor.DiscardPolicy());
-        for (int i = 1; i <= 10; i++) {
+                new ThreadPoolExecutor.CallerRunsPolicy());
+        for (int i = 1; i <= 20; i++) {
+            final int temp = i;
             threadPool.execute(()->{
-                System.out.println(Thread.currentThread().getName()+"\t办理业务");
+                try {
+                    TimeUnit.SECONDS.sleep(2);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.println(Thread.currentThread().getName()+"\t办理了业务 "+ temp);
             });
+
         }
 
     }
