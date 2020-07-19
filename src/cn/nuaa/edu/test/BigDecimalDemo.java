@@ -27,6 +27,7 @@ public class BigDecimalDemo {
         System.out.println(y);
         int z = Integer.parseInt(String.valueOf(Math.pow(2, 31)-1));
         System.out.println(z);
+        double xs =131.113d;
         //System.out.println(String.valueOf(12).toCharArray());
 
     }

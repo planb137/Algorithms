@@ -99,6 +99,10 @@ public class Test {
         while (temp == 10){
             System.out.println(temp);
         }
+
+        double ssd =  2e6;
+        double ssp =  1e-8;
+        System.out.println(String.valueOf(ssp));
     }
 
     public static void testHashSet(){
@@ -116,6 +120,7 @@ public class Test {
             System.out.println(iterator.next());
         }
         ArrayList<Integer> list = new ArrayList<Integer>();
+
     }
     public static void isDoubleEqual(double d1,double d2){
         double dis=1e-6;
