@@ -1,4 +1,4 @@
-package cn.nuaa.edu.test;
+package cn.nuaa.edu.leetcode;
 
 /**
  * @author planb

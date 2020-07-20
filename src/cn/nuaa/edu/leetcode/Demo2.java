@@ -1,6 +1,4 @@
-package cn.nuaa.edu.test;
-
-import java.math.BigDecimal;
+package cn.nuaa.edu.leetcode;
 
 /**
  * @author planb
