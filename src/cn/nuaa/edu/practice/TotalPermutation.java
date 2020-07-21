@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author planb
  * @date 2020/6/22 11:59
- * 备注：
+ * 备注：全排列
  */
 public class TotalPermutation {
     public  static List<List<Integer>> result = new ArrayList<>();
@@ -38,7 +38,7 @@ public class TotalPermutation {
         return;
     }
     public static void main(String[] args) {
-        int[] input = {1};
+        int[] input = {1,2,3};
         new TotalPermutation().permute(input);
 
         for (List<Integer> rs : TotalPermutation.result){

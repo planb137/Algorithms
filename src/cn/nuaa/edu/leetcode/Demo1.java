@@ -1,5 +1,7 @@
 package cn.nuaa.edu.leetcode;
 
+import java.util.ArrayList;
+
 /**
  * @author planb
  * @date 2020/7/17 20:58
@@ -16,5 +18,18 @@ public class Demo1 {
             }
         }
         return time;
+    }
+
+    public static void main(String[] args) {
+        ArrayList<String> res = new ArrayList<>();
+        res.add("abc");
+        res.add("acb");
+        res.add("cab");
+        //res.toArray();
+        res.toArray(new String[res.size()]);
+        // res.toArray(new String[res.size()]);
+        //res.toArray(new String[res.size()]);
+        //res.toArray(new String[res.size()]);
+
     }
 }
