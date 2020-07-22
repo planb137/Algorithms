@@ -47,8 +47,8 @@ public class Offer382 {
 
     public static void main(String[] args) {
        new Offer382().permutation("aab");
-        for (int j = 0; j < res.length; j++) {
+     /*   for (int j = 0; j < res.length; j++) {
             System.out.print(res[j]+" ");
-        }
+        }*/
     }
 }
