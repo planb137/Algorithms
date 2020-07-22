@@ -10,12 +10,12 @@ public class IPSum {
         int[][] arr = new int[5][str.length()+1];
         for (int i = 0; i < 5; i++) {
             for (int j = i; j < str.length()+1; j++) {
-                if (i == 0 && j==0){
-                    arr[i][j] = 1;
-                    continue;
-                }
                 if(i == 0){
                     arr[i][j] = 0;
+                    continue;
+                }
+                if (i == 0 && j==0){
+                    arr[i][j] = 1;
                     continue;
                 }
                 for (int k = 1; k <= 3; k++) {
