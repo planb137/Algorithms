@@ -86,6 +86,6 @@ public class Offer12 {
                         dfs2(board, word, i, j + 1, k + 1) || dfs2(board, word, i, j - 1, k + 1);
           board[i][j] = tmp;
            return res;
-            }
+    }
 
 }
