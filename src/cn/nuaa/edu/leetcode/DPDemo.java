@@ -1,5 +1,7 @@
 package cn.nuaa.edu.leetcode;
 
+import java.util.Arrays;
+
 /**
  * @author planb
  * @date 2020/7/18 14:29
@@ -13,7 +15,7 @@ public class DPDemo {
             return Math.max(nums[0],nums[i]);
         }else {
             int a = dp_rec(nums,i -2)+nums[i];
-            int b = dp_rec(nums, i-2);
+            int b = dp_rec(nums, i-1);
             return Math.max(a, b);
         }
     }
