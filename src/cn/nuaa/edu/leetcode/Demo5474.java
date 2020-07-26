@@ -1,5 +1,7 @@
 package cn.nuaa.edu.leetcode;
 
+import java.util.HashMap;
+
 /**
  * @author planb
  * @date 2020/7/26 14:40
@@ -24,5 +26,7 @@ public class Demo5474 {
 
     public static void main(String[] args) {
         System.out.println(9e4);
+        HashMap<Integer, Integer> map = new HashMap<>();
+        //map.getOrDefault()
     }
 }
