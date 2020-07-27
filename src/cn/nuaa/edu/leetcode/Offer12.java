@@ -85,7 +85,7 @@ public class Offer12 {
           boolean res = dfs2(board, word, i + 1, j, k + 1) || dfs2(board, word, i - 1, j, k + 1) ||
                         dfs2(board, word, i, j + 1, k + 1) || dfs2(board, word, i, j - 1, k + 1);
           board[i][j] = tmp;
-           return res;
+          return res;
     }
 
 }
