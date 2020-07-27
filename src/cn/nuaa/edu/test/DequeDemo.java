@@ -29,6 +29,8 @@ public class DequeDemo {
         while (!deque.isEmpty()){
             //System.out.println(deque.removeFirst());
             System.out.println(deque.removeLast());
+            deque.peekFirst();
+            deque.peekLast();
         }
 
 
