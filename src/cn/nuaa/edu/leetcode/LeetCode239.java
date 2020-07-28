@@ -26,7 +26,6 @@ public class LeetCode239 {
             if (index > dq.peekFirst()){
                 dq.removeFirst();
             }
-
             while(!dq.isEmpty() && nums[dq.peekLast()] <= nums[i]){
                 dq.removeLast();
             }
