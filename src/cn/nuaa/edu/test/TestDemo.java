@@ -11,10 +11,11 @@ import java.util.concurrent.ThreadPoolExecutor;
  * @author planb
  * @date 2020/7/6 12:32
  * 备注：Arrays.asList注意事项
+ * 格式化代码 command+option+L
  */
 public class TestDemo {
     public static void main(String[] args) {
-        Integer[] arr = {1,4,5,7,8};
+        Integer[] arr = {1, 4, 5, 7, 8};
         List<Integer> list = Arrays.asList(arr);
 /*        System.out.println(list);
         arr[0]=12;
@@ -24,26 +25,31 @@ public class TestDemo {
         ArrayList<Integer> integers2 = new ArrayList<>(5);
 
         MyThreadPoolDemo myThreadPoolDemo = new MyThreadPoolDemo();
-        if(myThreadPoolDemo instanceof MyThreadPoolDemo ){
+        if (myThreadPoolDemo instanceof MyThreadPoolDemo) {
             System.out.println("yes");
         }
 
         Integer a = new Integer(2);
         System.out.println(a.hashCode());
-        if(a instanceof Integer){
+        if (a instanceof Integer) {
             System.out.println("yes");
         }
         System.out.println(integers.hashCode());
         System.out.println(integers2.hashCode());
 
         System.out.println("==============================");
-        char[] c = {'2','8','d','3','1'};
+        char[] c = {'2', '8', 'd', '3', '1'};
         String s = new String(c);
         System.out.println(c);
 
-        char[] d = {'2','8','d','3','1'};
+        char[] d = {'2', '8', 'd', '3', '1'};
         String s1 = String.valueOf(d);
         System.out.println(s1);
+
+        String asa = "ad12  --131 ;";
+        String ss = asa.replace("  ", "ap");
+        System.out.println(ss);
+
 
     }
 }
