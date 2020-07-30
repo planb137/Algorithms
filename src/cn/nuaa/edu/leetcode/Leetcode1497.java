@@ -1,6 +1,8 @@
 package cn.nuaa.edu.leetcode;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -38,5 +40,8 @@ public class Leetcode1497 {
     public static void main(String[] args) {
         int[] arr = {-1,1,-2,2,-3,3,-4,4};
         System.out.println(new Leetcode1497().canArrange(arr, 3));
+        Map<Integer, ArrayList<Integer>> map = new HashMap<>();
+        ArrayList<Integer> list = map.get(1);
+
     }
 }
