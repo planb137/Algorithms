@@ -42,4 +42,15 @@ public class Leetcode1496 {
         }
         return false;
     }
+
+    public static void main(String[] args) {
+        Map<Integer,int[]> map = new HashMap<>();
+        ArrayList<Integer> li = new ArrayList<>();
+        li.add(0);
+        map.put(1, new int[]{8});
+        int[] x  = map.get(1);
+        for(int i = 0;i<x.length;i++){
+            System.out.println(x[i]);
+        }
+    }
 }
