@@ -10,14 +10,14 @@ public class Leetcode1493 {
         int k = nums.length;
         int res = 0;
         for(int i = 0,j = 0,z = 0;i < k; i++){
-            if (nums[i] == 0) { z++;}
-            while(z > 1 ){
+            if (nums[i] == 0) { z ++;}
+            while(z > 1){
                 //z -= !nums[j++];
                 if(nums[j++] == 0){
-                    z--;
+                    z --;
                 }
             }
-            res = Math.max(res,j - i);
+            res = Math.max(res, i - j);
         }
         return res;
     }
