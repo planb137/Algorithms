@@ -1,9 +1,12 @@
 package cn.nuaa.edu.leetcode;
 
+import java.util.*;
+
 /**
  * @author planb
  * @date 2020/8/1 15:33
- * 备注：
+ * 备注：String[] str =(String []) res.toArray();
+ *      String[] str2 = res.toArray(new String[res.size()]);
  */
 public class Leetcode14932 {
     public int longestSubarray(int[] nums) {
@@ -34,6 +37,31 @@ public class Leetcode14932 {
     public static void main(String[] args) {
         int[] nums = {1,1,0,1};
         System.out.println(" === "+new Leetcode14932().longestSubarray(nums));
+        String s = "add";
+        String s1 = "fsf";
+        String xs = s+s1;
+        List<String> res = new ArrayList<>();
+        res.add("qsa");
+        res.add("qka");
+        res.add("qga");
+        //String[] str =(String []) res.toArray();
+        String[] str2 = res.toArray(new String[res.size()]);
+        Map<String,Integer> map = new HashMap<>();
+        map.put("a", 1);
+        map.put("b", 2);
+        map.put("c", 3);
+        System.out.println(map.get("a"));
+        Set<String> set = map.keySet();
+        for (String s2 :map.keySet()) {
+            System.out.println(s2+map.get(s2));
+        }
+        //System.out.println(map.containsKey("b"));
+        List<String> list = new ArrayList<>();
+        list.add("asa");
+        list.add("asac");
+        list.add("afa");
+        System.out.println(list.get(0));
+
     }
 
 }

@@ -32,7 +32,10 @@ public class Leetcode1481 {
         for(String name :names){
             String su = new String();
             int k = 0;
-            if(map.containsKey(name)) k = map.get(name);
+            if(map.containsKey(name)) {
+                k = map.get(name);
+            }
+
             while(set.contains(name+su)){
                 k++;
                 su = "(" + String.valueOf(k)+ ")";
