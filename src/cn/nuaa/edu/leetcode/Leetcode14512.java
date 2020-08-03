@@ -1,6 +1,8 @@
 package cn.nuaa.edu.leetcode;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author planb
@@ -23,4 +25,16 @@ public class Leetcode14512 {
         chars[0] = (char) (chars[0]-32);
         return new String(chars);
     }
+    public String arrangeWords2(String text) {
+        String[] str =text.toLowerCase().split(" ");
+        List<String> list2 = new ArrayList<>();
+        Arrays.sort(str, (o1,o2)-> o1.length() - o2.length());
+
+        for (int i = 0; i < str.length; i++) {
+            list2.add(str[i]);
+        }
+        String res = String.join(" ", list2);
+        return res.substring(0, 1).toUpperCase()+res.substring(1);
+    }
+
 }
