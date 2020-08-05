@@ -95,14 +95,17 @@ public class Test {
         keySetView.put(4, 1);
         keySetView.put(5, 1);*/
 
-        int temp =1;
+/*        int temp =1;
         while (temp == 10){
             System.out.println(temp);
         }
 
         double ssd =  2e6;
         double ssp =  1e-8;
-        System.out.println(String.valueOf(ssp));
+        System.out.println(String.valueOf(ssp));*/
+        String s = "abcde";
+        System.out.println(new StringBuffer(s).replace(0, 2, "zddz"));
+        System.out.println(new StringBuffer(s).reverse());
     }
 
     public static void testHashSet(){
