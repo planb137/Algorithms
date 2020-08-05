@@ -25,7 +25,7 @@ public class leetcode151 {
         }
        res.replace(k, res.length(), " ");
        res.reverse();
-      return res.toString().trim();
+       return res.toString().trim();
     }
 
     public String reverseWords2(String s) {
