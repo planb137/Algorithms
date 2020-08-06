@@ -106,6 +106,8 @@ public class Test {
         String s = "abcde";
         System.out.println(new StringBuffer(s).replace(0, 2, "zddz"));
         System.out.println(new StringBuffer(s).reverse());
+        String s2 = s.replace("abc", "aad");
+        System.out.println(s2);
     }
 
     public static void testHashSet(){
