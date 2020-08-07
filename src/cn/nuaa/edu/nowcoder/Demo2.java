@@ -45,6 +45,20 @@ public class Demo2 {
         sc.close();
     }
 
+    //标准匈牙利算法
+    public static boolean find(long x, ArrayList<Long> evens, int[] used, long[] evensMatch) {
+
+        for (int j = 0; j < evens.size(); j++) {
+            if (isPrime(x + evens.get(j)) && used[j] == 0) {
+                used[j] = 1;
+                if (evensMatch[j] == 0 || find(evensMatch[j], evens, used, evensMatch)) {
+                    evensMatch[j] = x;
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
     private static boolean isPrime(long num) {
         for (int i = 2; i < Math.sqrt(num); i++) {
             if (num % i == 0) {
@@ -55,19 +69,5 @@ public class Demo2 {
             }
         }
         return true;
-    }
-
-    public static boolean find(long x, ArrayList<Long> evens, int[] used, long[] evensMatch) {
-        int j;
-        for (j = 0; j < evens.size(); j++) {
-            if (isPrime(x + evens.get(j)) && used[j] == 0) {
-                used[j] = 1;
-                if (evensMatch[j] == 0 || find(evensMatch[j], evens, used, evensMatch)) {
-                    evensMatch[j] = x;
-                    return true;
-                }
-            }
-        }
-        return false;
     }
 }
