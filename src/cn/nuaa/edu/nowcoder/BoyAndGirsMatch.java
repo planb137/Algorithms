@@ -37,6 +37,7 @@ public class BoyAndGirsMatch {
         return sum;
     }
     public static void main(String[] args) {
-
+        long x = 34;
+        System.out.println((Long.parseLong(String.valueOf(x))));
     }
 }

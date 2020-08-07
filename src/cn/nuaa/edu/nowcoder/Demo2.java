@@ -34,7 +34,7 @@ public class Demo2 {
             long[] evensMatch = new long[evens.size()];
             int result = 0;
             for (int i = 0; i < odds.size(); i++) {
-                int[] used = new int[evens.size()];
+                int[] used = new int[evens.size()];//used数组必须放在这里
                 if (find(odds.get(i), evens, used, evensMatch)) {
                     result++;
                 }
