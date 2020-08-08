@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * @author planb
  * @date 2020/8/8 15:02
- * 备注：
+ * 备注：数组素数拆分个数
  */
 public class Demo7 {
     public static long count(long x) {
