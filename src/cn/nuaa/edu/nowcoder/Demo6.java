@@ -6,7 +6,8 @@ import java.util.Scanner;
 /**
  * @author planb
  * @date 2020/8/7 20:05
- * 备注：
+ * 备注：小易给定你一个长度为的正整数序列，你每次可以使用的代价将某个数加一或者减一，
+ *      你希望用最少的代价使得所有数的乘积等于，求最小代价（操作结束后每个数也必须是正整数）。
  */
 public class Demo6 {
     public static void main(String[] args) {
