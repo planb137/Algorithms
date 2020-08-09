@@ -18,7 +18,7 @@ public class Demo9 {
             int n = sc.nextInt();
             int k = sc.nextInt();
             int[] num = new int[n];
-            ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
+           // ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
             int attpmt = 1;
             for (int i = 0; i < n; i++) {
                 num[i] = sc.nextInt();

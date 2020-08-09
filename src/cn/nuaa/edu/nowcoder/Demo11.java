@@ -34,8 +34,6 @@ public class Demo11 {
                 num[i] = sc.nextInt();
             }
             System.out.println(check(num));
-
-
             System.out.println("======");
         }
     }
