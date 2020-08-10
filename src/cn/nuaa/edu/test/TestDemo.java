@@ -50,6 +50,21 @@ public class TestDemo {
         String ss = asa.replace("  ", "ap");
         System.out.println(ss);
 
-
+        System.out.println("+++++++++++++++++++++++++++++++++++");
+       // TreeSet<Integer> set = new TreeSet<Integer>((o1,o2) -> o2-o1);
+        TreeSet<Integer> set = new TreeSet<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o2-o1;
+            }
+        });
+        set.add(3);
+        set.add(1);
+        set.add(5);
+        set.add(4);
+        Iterator<Integer> iterator = set.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
     }
 }
