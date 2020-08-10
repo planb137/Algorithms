@@ -10,6 +10,7 @@ import java.util.Scanner;
  * 备注： 写出一个程序，接受一个十六进制的数，输出该数值的十进制表示。（多组同时输入 ）
  */
 public class Demo3 {
+
     static Map<Character,Integer> map =  new HashMap<Character,Integer>();
     public static void main(String[] args) {
         map.put('A', 10);

@@ -1,5 +1,7 @@
 package cn.nuaa.edu.test;
 
+import com.sun.tools.corba.se.idl.InterfaceGen;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,7 +12,7 @@ import java.util.Map;
  */
 public class UnitTest {
     static Map<Character,Integer> map =  new HashMap<Character,Integer>();
-    public static void main(String[] args) {
+    public static void hex() {
         map.put('A', 10);
         map.put('B', 11);
         map.put('C', 12);
@@ -32,6 +34,11 @@ public class UnitTest {
             }
         }
         System.out.println(sum+"");
+    }
+
+    public static void main(String[] args) {
+        System.out.println(Integer.parseInt("10101010101", 2));
+        System.out.println(Integer.decode("0xA"));
     }
 }
 
