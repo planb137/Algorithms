@@ -1,6 +1,5 @@
 package cn.nuaa.edu.test;
 
-import com.sun.tools.corba.se.idl.InterfaceGen;
 
 import java.util.HashMap;
 import java.util.Map;
