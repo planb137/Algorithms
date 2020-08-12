@@ -6,11 +6,7 @@ package cn.nuaa.edu;
  * 备注：
  */
 public class DynamicProgramming {
-    public static void main(String[] args) {
-        int [] x = {5,10,25};
-        System.out.println(coins1(x,1000));
-        System.out.println(countWays(x,1000));
-    }
+
     //暴力搜索算法
     public static int coins1(int[] arr, int aim) {
         if (arr == null || arr.length == 0 || aim < 0) {
@@ -58,6 +54,7 @@ public class DynamicProgramming {
         return res;
     }
 
+    //动态规划方法
     public static int countWays(int[] penny, int n, int aim) {
         if (penny == null || penny.length == 0 || aim < 0) {
             return 0;
@@ -84,5 +81,16 @@ public class DynamicProgramming {
         return dp[n - 1][aim];
     }
 
+    public static void main(String[] args) {
+        int [] x = {5,10,25,15};
+        //暴力搜索算法
+        System.out.println(coins1(x,1000));
+
+        //暴力搜索之记忆算法
+        System.out.println(countWays(x,1000));
+
+        //动态规划方法
+        System.out.println(countWays(x,4,1000));
+    }
 
 }
