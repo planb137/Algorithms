@@ -38,6 +38,11 @@ public class UnitTest {
     public static void main(String[] args) {
         System.out.println(Integer.parseInt("10101010101", 2));
         System.out.println(Integer.decode("0xA"));
+
+        double x = 32.1313131313131d;
+        System.out.println( x );
+        System.out.println(String.format("%.4f", x));
+
     }
 }
 
