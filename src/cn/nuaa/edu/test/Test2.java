@@ -19,5 +19,13 @@ public class Test2 {
         String s1 = "def";
         String s2 = s + s1;
         System.out.println(s + s1);
+
+        int[] x = new int[10];
+        for (int i = 0; i < x.length; i++) {
+            x[i] = i;
+        }
+        for (int a : x) {
+            System.out.println(a);
+        }
     }
 }
