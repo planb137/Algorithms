@@ -1,0 +1,56 @@
+package cn.nuaa.edu.juc;
+
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+
+/**
+ * @author planb
+ * @date 2020/8/13 18:29
+ * 备注：实现自己的Lock
+ */
+public class Mylock implements Lock {
+    public volatile int i = 0;
+
+    @Override
+    public void lock() {
+        synchronized (this) {
+            while (i != 0) { //已经有线程占用的话
+                try {
+                    this.wait(); //阻塞，或者CAS
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            i = 1;
+        }
+    }
+
+    @Override
+    public void lockInterruptibly() throws InterruptedException {
+
+    }
+
+    @Override
+    public boolean tryLock() {
+        return false;
+    }
+
+    @Override
+    public boolean tryLock(long time, TimeUnit unit) throws InterruptedException {
+        return false;
+    }
+
+    @Override
+    public void unlock() {
+        synchronized (this){
+            i = 0;
+            this.notifyAll();
+        }
+    }
+
+    @Override
+    public Condition newCondition() {
+        return null;
+    }
+}
