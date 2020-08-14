@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author planb
  * @date 2020/7/18 14:29
- * 备注：递归方式（时间复杂度高）,非递归o(n)
+ * 备注：不相邻子序列最大和。递归方式（时间复杂度高）,非递归o(n)
  */
 public class DPDemo {
     public static int dp_rec(int[] nums, int i) {
