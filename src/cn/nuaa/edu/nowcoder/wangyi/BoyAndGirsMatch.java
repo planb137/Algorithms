@@ -1,6 +1,4 @@
-package cn.nuaa.edu.nowcoder;
-
-import com.sun.org.apache.regexp.internal.RE;
+package nuaa.edu.nowcoder.wangyi;
 
 /**
  * @author planb

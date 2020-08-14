@@ -1,7 +1,6 @@
-package cn.nuaa.edu.nowcoder;
+package nuaa.edu.nowcoder.wangyi;
 
 import java.util.Scanner;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author planb

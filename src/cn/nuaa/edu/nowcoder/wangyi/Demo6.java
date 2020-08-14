@@ -1,6 +1,5 @@
-package cn.nuaa.edu.nowcoder;
+package nuaa.edu.nowcoder.wangyi;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
