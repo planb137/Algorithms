@@ -1,5 +1,7 @@
 package cn.nuaa.edu.juc;
 
+import sun.tools.tree.SynchronizedStatement;
+
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 
 /**
@@ -8,8 +10,10 @@ import java.util.concurrent.locks.AbstractQueuedSynchronizer;
  * 备注：实现自己的AQS
  */
 public class Sync extends AbstractQueuedSynchronizer {
+
     @Override
     protected boolean tryAcquire(int arg) {
+
         if(compareAndSetState(0, 1)){
             //互斥锁
             setExclusiveOwnerThread(Thread.currentThread());
