@@ -1,5 +1,6 @@
 package cn.nuaa.edu.juc;
 
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -11,6 +12,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class ThreadUsingMyLock {
     public static int m = 0;
     public static Lock lock = new Mylock();//使用自定义的锁
+    public static CountDownLatch latch = new CountDownLatch(100);
     public static void main(String[] args) throws InterruptedException {
         Thread[] threads = new Thread[100];
         for (int i = 0; i < threads.length; i++) {
@@ -25,16 +27,20 @@ public class ThreadUsingMyLock {
                 } finally {
                     lock.unlock();
                 }
+                latch.countDown();
             },String.valueOf(i));
         }
 
         for (Thread t: threads) {
             t.start();
         }
-        for (Thread t: threads) {
-            t.join();//等待所有线程运行完毕
-        }
+/*        for (Thread t: threads) {
+            t.join();//等待所有线程运行完毕，或者使用sync实现
+        }*/
         // Thread.sleep(3000);
+
+        latch.await();
+
         System.out.println(m);
     }
 }
