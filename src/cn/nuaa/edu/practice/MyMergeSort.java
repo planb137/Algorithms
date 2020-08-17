@@ -38,6 +38,7 @@ public class MyMergeSort {
         while (j <=bound){
             temp[k++] = nums[j++];
         }
+        //赋值到以前的数组
         for (int index = 0; index < temp.length; index++) {
             nums[left+index] = temp[index];
         }
