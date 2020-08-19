@@ -12,16 +12,10 @@ public class QucikSort {
         if (l >= r) {
             return;
         }
-        int x = num[l], i = l, j = r;
-
+        int x = num[l], i = l - 1, j = r + 1;
         while (i < j) {
-            while (num[i] < x) {
-                i++;
-            }
-            while (num[j] > x) {
-                j--;
-            }
-
+            while (num[++i] < x) { }
+            while (num[--j] > x) { }
             if (i < j) {
                 int temp = num[i];
                 num[i] = num[j];
@@ -35,14 +29,15 @@ public class QucikSort {
 
     public static void main(String[] args) {
         // int[] num = {3, 4, 1, -2, 0, 8};
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] num = new int[n];
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
-            num[i] = sc.nextInt();
+            arr[i] = in.nextInt();
         }
-        sort(num, 0, n - 1);
-        for (int x : num) {
+
+        sort(arr, 0, n - 1);
+        for (int x : arr) {
             System.out.print(x + " ");
         }
     }
