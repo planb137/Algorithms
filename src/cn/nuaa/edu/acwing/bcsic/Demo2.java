@@ -12,7 +12,7 @@ public class Demo2 {
         Scanner sc = new Scanner(System.in);
         double x = sc.nextDouble();
         double l = 0, r = x;
-        while (r - l > 1e-8) {
+        while (r - l > 1e-10) {
             double mid = (l + r) / 2.0d;
             if(mid * mid > x){
                 r = mid;

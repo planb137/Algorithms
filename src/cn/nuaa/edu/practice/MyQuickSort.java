@@ -1,5 +1,7 @@
 package cn.nuaa.edu.practice;
 
+import java.util.Scanner;
+
 /**
  * @author planb
  * @date 2020/6/22 16:25
@@ -37,11 +39,17 @@ public class MyQuickSort {
     }
 
     public static void main(String[] args) {
-        int arr[] = new int[]{3,1,5,7,9,2,10};
-        int len = arr.length-1;
-        arr=qsort(arr,0,len);
-        for (int i:arr) {
-            System.out.print(i+"\t");
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++)
+        {
+            arr[i] = in.nextInt();
+        }
+
+        qsort(arr, 0, n - 1);
+        for (int x : arr) {
+            System.out.print(x + " ");
         }
     }
 }

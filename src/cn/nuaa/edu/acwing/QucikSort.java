@@ -14,8 +14,10 @@ public class QucikSort {
         }
         int x = num[l], i = l - 1, j = r + 1;
         while (i < j) {
-            while (num[++i] < x) { }
-            while (num[--j] > x) { }
+            while (num[++ i] < x ) {
+            }
+            while (num[-- j] > x) {
+            }
             if (i < j) {
                 int temp = num[i];
                 num[i] = num[j];
