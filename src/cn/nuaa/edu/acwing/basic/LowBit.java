@@ -15,6 +15,7 @@ public class LowBit {
         int res = 0;
         while (n != 0) {
             n -= lowBit(n);
+            //System.out.println(n);
             res++;
         }
         System.out.println(res);
