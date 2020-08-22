@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * @author planb
  * @date 2020/8/20 19:51
- * 备注：走迷宫,最短路径
+ * 备注：走迷宫bfs,最短路径
  */
 class Node {
     int x;
@@ -53,11 +53,11 @@ public class BFSDemo {
                 break;
             }
             for (int i = 0; i < 4; i++) {
-                int newx = curHead.x+dx[i];
-                int newy = curHead.y+dy[i];
+                int newx = curHead.x + dx[i];
+                int newy = curHead.y + dy[i];
 
                 //当新位置在合法范围内并且新位置的元素为0且没有被访问过的请情况下才可以继续查找
-                if(newx >= 0 && newx < row && newy >= 0 && newy < col && dis[newx][newy] == 0 && matrix[newx][newy] == 0){
+                if (newx >= 0 && newx < row && newy >= 0 && newy < col && dis[newx][newy] == 0 && matrix[newx][newy] == 0) {
                     //将新节点添加进队列
                     q.offer(new Node(newx, newy));
                     //记录距离
