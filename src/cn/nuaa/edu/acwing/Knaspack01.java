@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @date 2020/8/23 18:52
  * 备注：acwing 01背包问题
  */
-public class DPdemo1 {
+public class Knaspack01 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
