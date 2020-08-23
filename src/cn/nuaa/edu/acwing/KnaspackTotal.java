@@ -29,6 +29,6 @@ public class KnaspackTotal {
             }
         }
 
-        System.out.println(dp[n][m]);;
+        System.out.println(dp[n][m]);
     }
 }
