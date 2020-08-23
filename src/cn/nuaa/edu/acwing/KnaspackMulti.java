@@ -1,4 +1,4 @@
-package nuaa.edu.acwing.basic;
+package nuaa.edu.acwing;
 
 import java.util.Scanner;
 
