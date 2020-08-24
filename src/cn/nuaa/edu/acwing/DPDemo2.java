@@ -14,6 +14,7 @@ public class DPDemo2 {
         int INF = (int) 1e9;
         int[][] f = new int[n + 1][n + 1];
         int[][] dp = new int[n + 1][n + 1];
+
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
                 f[i][j] = sc.nextInt();
@@ -28,7 +29,7 @@ public class DPDemo2 {
 
             for (i = 2; i <= n; i++) {
                 for (int j = 1; j <= i; j++) {
-                    dp[i][j] = Math.max(dp[i - 1][j - 1] + f[i][j], dp[i - 1][j] + f[i][j]);
+                    dp[i][j] = f[i][j]+ Math.max(dp[i - 1][j - 1] , dp[i - 1][j]);
                 }
             }
 
