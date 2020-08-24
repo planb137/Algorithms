@@ -6,7 +6,6 @@ import java.util.Scanner;
  * @author planb
  * @date 2020/8/24 17:13
  * 备注： 最长上升子序列（给定一个长度为N的数列，求数值严格单调递增的子序列的长度最长是多少。
- * 输入格式）
  */
 public class DPDemo1 {
     public static void main(String[] args) {
