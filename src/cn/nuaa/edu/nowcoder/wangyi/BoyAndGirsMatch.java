@@ -27,7 +27,7 @@ public class BoyAndGirsMatch {
     int match(){
         int sum = 0;
         for (int i = 1; i <= 4; i++) {
-            int[] used = new int[N];
+            used = new boolean[N];
             if(find(i)){
                 sum++;
             }
