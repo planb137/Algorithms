@@ -1,4 +1,4 @@
-package cn.nuaa.edu.reflect;
+package nuaa.edu.reflect;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
  */
 public class ReflectDemo {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
-        Class<Student> c1 = Student.class;
+        Class<cn.nuaa.edu.reflect.Student> c1 = cn.nuaa.edu.reflect.Student.class;
         /*System.out.println(c1);
     Student s = new Student();
         System.out.println(s.getClass()==c1);
@@ -24,12 +24,12 @@ public class ReflectDemo {
         for (Constructor con:declaredConstructors) {
             System.out.println(con);
         }
-       Constructor<Student> constructor = c1.getConstructor();
-        Student student = constructor.newInstance();
+       Constructor<cn.nuaa.edu.reflect.Student> constructor = c1.getConstructor();
+        cn.nuaa.edu.reflect.Student student = constructor.newInstance();
         System.out.println(student);//Student{name='null', age=0, addrss='null'}
 
-        Constructor<Student> constructor1 = c1.getConstructor(String.class, int.class, String.class);
-        Student student1 = constructor1.newInstance("lisi", 12, "nanjing");
+        Constructor<cn.nuaa.edu.reflect.Student> constructor1 = c1.getConstructor(String.class, int.class, String.class);
+        cn.nuaa.edu.reflect.Student student1 = constructor1.newInstance("lisi", 12, "nanjing");
         System.out.println(student1);//Student{name='lisi', age=12, addrss='nanjing'}*/
 
         Constructor<?> constructor2 = c1.getDeclaredConstructor(String.class);
@@ -43,14 +43,14 @@ public class ReflectDemo {
             System.out.println(f);
         }
 
-        Constructor<Student> constructor5 = c1.getConstructor();
-        Student student2 = constructor5.newInstance();
+        Constructor<cn.nuaa.edu.reflect.Student> constructor5 = c1.getConstructor();
+        cn.nuaa.edu.reflect.Student student2 = constructor5.newInstance();
         Field address = c1.getField("addrss");
         address.set(student2, "南京");//给obj的成员变量address赋值南京
         System.out.println(student2); //Student{name='null', age=0, addrss='南京'}
 
-        Constructor<Student> constructor3 = c1.getConstructor();
-        Student student3 = constructor3.newInstance();
+        Constructor<cn.nuaa.edu.reflect.Student> constructor3 = c1.getConstructor();
+        cn.nuaa.edu.reflect.Student student3 = constructor3.newInstance();
         Field name = c1.getDeclaredField("name");
         name.setAccessible(true);
         name.set(student1,"planb");
@@ -58,8 +58,8 @@ public class ReflectDemo {
 
         Method declaredMethods = c1.getDeclaredMethod("method3", String.class, int.class);
         declaredMethods.setAccessible(true);
-        Constructor<Student> constructor4 = c1.getConstructor();
-        Student student4 = constructor4.newInstance();
+        Constructor<cn.nuaa.edu.reflect.Student> constructor4 = c1.getConstructor();
+        cn.nuaa.edu.reflect.Student student4 = constructor4.newInstance();
         Object invoke = declaredMethods.invoke(student4, "4",8);
         System.out.println(invoke);
     }
