@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @date 2020/8/7 15:08
  * 备注：匈牙利算法：若两个正整数的和为素数，则这两个正整数称之为“素数伴侣”
  */
-public class Demo2 {
+public class HungaryAlgorithm {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -34,7 +34,7 @@ public class Demo2 {
             long[] evensMatch = new long[evens.size()];
             int result = 0;
             for (int i = 0; i < odds.size(); i++) {
-                int[] used = new int[evens.size()];//used数组必须放在这里
+                boolean[] used = new boolean[evens.size()];//used数组必须放在这里
                 if (find(odds.get(i), evens, used, evensMatch)) {
                     result++;
                 }
@@ -46,11 +46,11 @@ public class Demo2 {
     }
 
     //标准匈牙利算法
-    public static boolean find(long x, ArrayList<Long> evens, int[] used, long[] evensMatch) {
+    public static boolean find(long x, ArrayList<Long> evens, boolean[] used, long[] evensMatch) {
 
         for (int j = 0; j < evens.size(); j++) {
-            if (isPrime(x + evens.get(j)) && used[j] == 0) {
-                used[j] = 1;
+            if (isPrime(x + evens.get(j)) && used[j] == false) {
+                used[j] = true;
                 if (evensMatch[j] == 0 || find(evensMatch[j], evens, used, evensMatch)) {
                     evensMatch[j] = x;
                     return true;
