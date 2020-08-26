@@ -14,7 +14,7 @@ public class ReflectDemo {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
         Class<cn.nuaa.edu.reflect.Student> c1 = cn.nuaa.edu.reflect.Student.class;
         /*System.out.println(c1);
-    Student s = new Student();
+        Student s = new Student();
         System.out.println(s.getClass()==c1);
         Class<?> c3 = Class.forName("cn.nuaa.edu.reflect.Student");
         System.out.println(c3 ==c1);*/
