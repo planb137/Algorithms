@@ -1,5 +1,7 @@
 package nuaa.edu.Junit;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -9,16 +11,16 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class CalculatorsTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void add() {
 
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void substract() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void print() {
     }
 }
