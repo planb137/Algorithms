@@ -15,6 +15,7 @@ public class StoneMerge {
         for (int i = 1; i <= n; i++) {
             s[i] = sc.nextInt();
         }
+        //前缀和
         for (int i = 1; i <= n; i++) {
             s[i] += s[i - 1];
         }
