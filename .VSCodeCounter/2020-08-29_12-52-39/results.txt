@@ -1,66 +1,48 @@
-Date : 2020-08-25 21:51:34
-Directory : /Users/planb/Desktop/idea code/Spring Cloud/Algorithm
-Total : 216 files,  7869 codes, 1825 comments, 1155 blanks, all 10849 lines
+Date : 2020-08-29 12:52:39
+Directory : /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu
+Total : 218 files,  7083 codes, 1922 comments, 1229 blanks, all 10234 lines
 
 Languages
 +----------+------------+------------+------------+------------+------------+
 | language | files      | code       | comment    | blank      | total      |
 +----------+------------+------------+------------+------------+------------+
-| Java     |        204 |      6,750 |      1,825 |      1,152 |      9,727 |
-| XML      |         11 |      1,110 |          0 |          0 |      1,110 |
-| Markdown |          1 |          9 |          0 |          3 |         12 |
+| Java     |        218 |      7,083 |      1,922 |      1,229 |     10,234 |
 +----------+------------+------------+------------+------------+------------+
 
 Directories
 +----------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
 | path                                                                                                           | files      | code       | comment    | blank      | total      |
 +----------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
-| .                                                                                                              |        216 |      7,869 |      1,825 |      1,155 |     10,849 |
-| .idea                                                                                                          |         10 |      1,097 |          0 |          0 |      1,097 |
-| .idea/inspectionProfiles                                                                                       |          2 |         41 |          0 |          0 |         41 |
-| .idea/leetcode                                                                                                 |          1 |         17 |          0 |          0 |         17 |
-| .idea/libraries                                                                                                |          1 |         30 |          0 |          0 |         30 |
-| src                                                                                                            |        204 |      6,750 |      1,825 |      1,152 |      9,727 |
-| src/cn                                                                                                         |        204 |      6,750 |      1,825 |      1,152 |      9,727 |
-| src/cn/nuaa                                                                                                    |        204 |      6,750 |      1,825 |      1,152 |      9,727 |
-| src/cn/nuaa/edu                                                                                                |        204 |      6,750 |      1,825 |      1,152 |      9,727 |
-| src/cn/nuaa/edu/acwing                                                                                         |         22 |        560 |        133 |        110 |        803 |
-| src/cn/nuaa/edu/acwing/basic                                                                                   |          7 |        199 |         43 |         36 |        278 |
-| src/cn/nuaa/edu/cas                                                                                            |          4 |        137 |         48 |         33 |        218 |
-| src/cn/nuaa/edu/juc                                                                                            |         19 |        716 |        227 |        129 |      1,072 |
-| src/cn/nuaa/edu/jvm                                                                                            |          7 |        124 |         92 |         33 |        249 |
-| src/cn/nuaa/edu/leetcode                                                                                       |         42 |      1,265 |        286 |        197 |      1,748 |
-| src/cn/nuaa/edu/lock                                                                                           |          2 |        102 |         24 |         16 |        142 |
-| src/cn/nuaa/edu/nowcoder                                                                                       |         23 |        644 |        155 |        104 |        903 |
-| src/cn/nuaa/edu/nowcoder/huawei                                                                                |         10 |        216 |         56 |         40 |        312 |
-| src/cn/nuaa/edu/nowcoder/wangyi                                                                                |         13 |        428 |         99 |         64 |        591 |
-| src/cn/nuaa/edu/offer                                                                                          |         22 |      1,262 |        312 |        170 |      1,744 |
-| src/cn/nuaa/edu/practice                                                                                       |         23 |        693 |        158 |        112 |        963 |
-| src/cn/nuaa/edu/reflect                                                                                        |          6 |        148 |         41 |         32 |        221 |
-| src/cn/nuaa/edu/stream                                                                                         |          5 |        181 |         34 |         36 |        251 |
-| src/cn/nuaa/edu/test                                                                                           |         20 |        545 |        242 |        140 |        927 |
+| .                                                                                                              |        218 |      7,083 |      1,922 |      1,229 |     10,234 |
+| Junit                                                                                                          |          3 |         49 |         23 |         20 |         92 |
+| acwing                                                                                                         |         24 |        618 |        147 |        119 |        884 |
+| acwing/basic                                                                                                   |          7 |        199 |         43 |         36 |        278 |
+| cas                                                                                                            |          4 |        137 |         48 |         33 |        218 |
+| juc                                                                                                            |         19 |        716 |        227 |        129 |      1,072 |
+| jvm                                                                                                            |          7 |        124 |         92 |         33 |        249 |
+| leetcode                                                                                                       |         46 |      1,399 |        313 |        216 |      1,928 |
+| lock                                                                                                           |          2 |        102 |         24 |         16 |        142 |
+| nowcoder                                                                                                       |         23 |        644 |        155 |        104 |        903 |
+| nowcoder/huawei                                                                                                |         10 |        216 |         56 |         40 |        312 |
+| nowcoder/wangyi                                                                                                |         13 |        428 |         99 |         64 |        591 |
+| offer                                                                                                          |         22 |      1,262 |        312 |        170 |      1,744 |
+| practice                                                                                                       |         23 |        693 |        158 |        112 |        963 |
+| reflect                                                                                                        |          6 |        148 |         41 |         32 |        221 |
+| stream                                                                                                         |          5 |        181 |         34 |         36 |        251 |
+| test                                                                                                           |         25 |        637 |        275 |        169 |      1,081 |
 +----------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
 
 Files
 +----------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
 | filename                                                                                                       | language | code       | comment    | blank      | total      |
 +----------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
-| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/.idea/compiler.xml                                       | XML      |          6 |          0 |          0 |          6 |
-| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/.idea/inspectionProfiles/Project_Default.xml             | XML      |         36 |          0 |          0 |         36 |
-| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/.idea/inspectionProfiles/profiles_settings.xml           | XML      |          5 |          0 |          0 |          5 |
-| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/.idea/leetcode/editor.xml                                | XML      |         17 |          0 |          0 |         17 |
-| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/.idea/libraries/Maven__Arquillian_JUnit_Release.xml      | XML      |         30 |          0 |          0 |         30 |
-| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/.idea/misc.xml                                           | XML      |         13 |          0 |          0 |         13 |
-| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/.idea/modules.xml                                        | XML      |          8 |          0 |          0 |          8 |
-| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/.idea/uiDesigner.xml                                     | XML      |        124 |          0 |          0 |        124 |
-| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/.idea/vcs.xml                                            | XML      |          6 |          0 |          0 |          6 |
-| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/.idea/workspace.xml                                      | XML      |        852 |          0 |          0 |        852 |
-| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/Algorithm.iml                                            | XML      |         13 |          0 |          0 |         13 |
-| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/README.md                                                | Markdown |          9 |          0 |          3 |         12 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/BinarySearchTree.java                    | Java     |         58 |         14 |          4 |         76 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/BubbleSort.java                          | Java     |         21 |          5 |          4 |         30 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/DynamicProgramming.java                  | Java     |         72 |         13 |         12 |         97 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/HeapSort.java                            | Java     |         38 |         15 |          5 |         58 |
+| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/Junit/Calculator.java                    | Java     |         13 |          5 |          7 |         25 |
+| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/Junit/CalculatorTest.java                | Java     |         22 |         13 |          6 |         41 |
+| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/Junit/CalculatorsTest.java               | Java     |         14 |          5 |          7 |         26 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/KMPDemo.java                             | Java     |         72 |          6 |          3 |         81 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/QueueDemo.java                           | Java     |         27 |          5 |          3 |         35 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/QuickSort.java                           | Java     |         39 |          5 |          4 |         48 |
@@ -74,12 +56,14 @@ Files
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/acwing/DPDemo3.java                      | Java     |         39 |          9 |          5 |         53 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/acwing/DPDemo4.java                      | Java     |         21 |          6 |          4 |         31 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/acwing/DoublePointer.java                | Java     |         15 |          6 |          5 |         26 |
-| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/acwing/FrontPrefixSum.java               | Java     |         14 |          7 |          2 |         23 |
+| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/acwing/FrontPrefixSum.java               | Java     |         16 |          7 |          2 |         25 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/acwing/Knaspack01.java                   | Java     |         25 |          5 |          8 |         38 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/acwing/KnaspackMulti.java                | Java     |         26 |          5 |          6 |         37 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/acwing/KnaspackTotal.java                | Java     |         24 |          5 |          6 |         35 |
+| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/acwing/MergeDemo.java                    | Java     |         29 |          8 |          6 |         43 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/acwing/MergeSort.java                    | Java     |         43 |          6 |          8 |         57 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/acwing/QucikSort.java                    | Java     |         35 |          6 |          7 |         48 |
+| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/acwing/StoneMerge.java                   | Java     |         27 |          6 |          3 |         36 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/acwing/TrieDemo.java                     | Java     |          5 |          5 |          3 |         13 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/acwing/basic/BFSDemo.java                | Java     |         50 |         11 |         12 |         73 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/acwing/basic/DFSDemo.java                | Java     |         29 |          5 |          6 |         40 |
@@ -138,13 +122,17 @@ Files
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/leetcode/LeetCode1498.java               | Java     |         24 |          9 |          3 |         36 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/leetcode/LeetCode1499.java               | Java     |         25 |          9 |          9 |         43 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/leetcode/LeetCode1553.java               | Java     |         27 |         12 |          7 |         46 |
+| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/leetcode/LeetCode1557.java               | Java     |         64 |          6 |          7 |         77 |
+| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/leetcode/LeetCode1558.java               | Java     |         28 |          5 |          5 |         38 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/leetcode/LeetCode1561.java               | Java     |         13 |          5 |          3 |         21 |
+| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/leetcode/LeetCode1563.java               | Java     |         32 |         11 |          6 |         49 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/leetcode/LeetCode239.java                | Java     |         31 |          5 |          5 |         41 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/leetcode/Leetcode113.java                | Java     |         40 |          7 |          5 |         52 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/leetcode/Leetcode1375.java               | Java     |         14 |          5 |          2 |         21 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/leetcode/Leetcode1451.java               | Java     |         34 |          5 |          5 |         44 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/leetcode/Leetcode14512.java              | Java     |         29 |          6 |          6 |         41 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/leetcode/Leetcode1452.java               | Java     |         35 |          8 |          3 |         46 |
+| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/leetcode/Leetcode1461.java               | Java     |         10 |          5 |          1 |         16 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/leetcode/Leetcode1481.java               | Java     |         39 |          7 |          5 |         51 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/leetcode/Leetcode1493.java               | Java     |         21 |          6 |          4 |         31 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/leetcode/Leetcode14932.java              | Java     |         54 |          8 |          6 |         68 |
@@ -241,6 +229,8 @@ Files
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/stream/ForkJoinDemo.java                 | Java     |         40 |          5 |          6 |         51 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/stream/StreamDemo.java                   | Java     |         74 |          8 |         14 |         96 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/stream/User.java                         | Java     |         20 |         10 |          7 |         37 |
+| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/AtomicDemo.java                     | Java     |         10 |          5 |          4 |         19 |
+| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/AtomicDemoTest.java                 | Java     |         10 |          5 |          6 |         21 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/BigDecimalDemo.java                 | Java     |         20 |          8 |          7 |         35 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/DFSDemo.java                        | Java     |         33 |         13 |         11 |         57 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/DequeDemo.java                      | Java     |         19 |         13 |          8 |         40 |
@@ -249,6 +239,7 @@ Files
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/FastPower.java                      | Java     |         27 |          6 |          4 |         37 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/GcdDemo.java                        | Java     |         15 |          5 |          4 |         24 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/Graph.java                          | Java     |         38 |          6 |          4 |         48 |
+| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/MapSortByValue.java                 | Java     |         35 |         11 |          7 |         53 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/PriorityQueue.java                  | Java     |         26 |          7 |          6 |         39 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/QueueTest.java                      | Java     |         12 |          5 |          5 |         22 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/SerializableDemo.java               | Java     |         24 |          5 |          5 |         34 |
@@ -259,7 +250,9 @@ Files
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/ThreadDemo.java                     | Java     |         24 |          6 |          4 |         34 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/ThreadTest.java                     | Java     |         33 |         15 |          7 |         55 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/TreeMapDemo.java                    | Java     |         24 |          5 |          6 |         35 |
+| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/UnitDemo.java                       | Java     |         10 |          6 |          4 |         20 |
+| /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/UnitDemoTest.java                   | Java     |         27 |          6 |          8 |         41 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/UnitTest.java                       | Java     |         35 |          5 |          9 |         49 |
 | /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu/test/WaitDemo.java                       | Java     |         43 |          7 |          5 |         55 |
-| Total                                                                                                          |          |      7,869 |      1,825 |      1,155 |     10,849 |
+| Total                                                                                                          |          |      7,083 |      1,922 |      1,229 |     10,234 |
 +----------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

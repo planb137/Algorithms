@@ -1,32 +1,23 @@
 # Details
 
-Date : 2020-08-25 21:51:34
+Date : 2020-08-29 12:52:39
 
-Directory /Users/planb/Desktop/idea code/Spring Cloud/Algorithm
+Directory /Users/planb/Desktop/idea code/Spring Cloud/Algorithm/src/cn/nuaa/edu
 
-Total : 216 files,  7869 codes, 1825 comments, 1155 blanks, all 10849 lines
+Total : 218 files,  7083 codes, 1922 comments, 1229 blanks, all 10234 lines
 
 [summary](results.md)
 
 ## Files
 | filename | language | code | comment | blank | total |
 | :--- | :--- | ---: | ---: | ---: | ---: |
-| [.idea/compiler.xml](/.idea/compiler.xml) | XML | 6 | 0 | 0 | 6 |
-| [.idea/inspectionProfiles/Project_Default.xml](/.idea/inspectionProfiles/Project_Default.xml) | XML | 36 | 0 | 0 | 36 |
-| [.idea/inspectionProfiles/profiles_settings.xml](/.idea/inspectionProfiles/profiles_settings.xml) | XML | 5 | 0 | 0 | 5 |
-| [.idea/leetcode/editor.xml](/.idea/leetcode/editor.xml) | XML | 17 | 0 | 0 | 17 |
-| [.idea/libraries/Maven__Arquillian_JUnit_Release.xml](/.idea/libraries/Maven__Arquillian_JUnit_Release.xml) | XML | 30 | 0 | 0 | 30 |
-| [.idea/misc.xml](/.idea/misc.xml) | XML | 13 | 0 | 0 | 13 |
-| [.idea/modules.xml](/.idea/modules.xml) | XML | 8 | 0 | 0 | 8 |
-| [.idea/uiDesigner.xml](/.idea/uiDesigner.xml) | XML | 124 | 0 | 0 | 124 |
-| [.idea/vcs.xml](/.idea/vcs.xml) | XML | 6 | 0 | 0 | 6 |
-| [.idea/workspace.xml](/.idea/workspace.xml) | XML | 852 | 0 | 0 | 852 |
-| [Algorithm.iml](/Algorithm.iml) | XML | 13 | 0 | 0 | 13 |
-| [README.md](/README.md) | Markdown | 9 | 0 | 3 | 12 |
 | [src/cn/nuaa/edu/BinarySearchTree.java](/src/cn/nuaa/edu/BinarySearchTree.java) | Java | 58 | 14 | 4 | 76 |
 | [src/cn/nuaa/edu/BubbleSort.java](/src/cn/nuaa/edu/BubbleSort.java) | Java | 21 | 5 | 4 | 30 |
 | [src/cn/nuaa/edu/DynamicProgramming.java](/src/cn/nuaa/edu/DynamicProgramming.java) | Java | 72 | 13 | 12 | 97 |
 | [src/cn/nuaa/edu/HeapSort.java](/src/cn/nuaa/edu/HeapSort.java) | Java | 38 | 15 | 5 | 58 |
+| [src/cn/nuaa/edu/Junit/Calculator.java](/src/cn/nuaa/edu/Junit/Calculator.java) | Java | 13 | 5 | 7 | 25 |
+| [src/cn/nuaa/edu/Junit/CalculatorTest.java](/src/cn/nuaa/edu/Junit/CalculatorTest.java) | Java | 22 | 13 | 6 | 41 |
+| [src/cn/nuaa/edu/Junit/CalculatorsTest.java](/src/cn/nuaa/edu/Junit/CalculatorsTest.java) | Java | 14 | 5 | 7 | 26 |
 | [src/cn/nuaa/edu/KMPDemo.java](/src/cn/nuaa/edu/KMPDemo.java) | Java | 72 | 6 | 3 | 81 |
 | [src/cn/nuaa/edu/QueueDemo.java](/src/cn/nuaa/edu/QueueDemo.java) | Java | 27 | 5 | 3 | 35 |
 | [src/cn/nuaa/edu/QuickSort.java](/src/cn/nuaa/edu/QuickSort.java) | Java | 39 | 5 | 4 | 48 |
@@ -40,12 +31,14 @@ Total : 216 files,  7869 codes, 1825 comments, 1155 blanks, all 10849 lines
 | [src/cn/nuaa/edu/acwing/DPDemo3.java](/src/cn/nuaa/edu/acwing/DPDemo3.java) | Java | 39 | 9 | 5 | 53 |
 | [src/cn/nuaa/edu/acwing/DPDemo4.java](/src/cn/nuaa/edu/acwing/DPDemo4.java) | Java | 21 | 6 | 4 | 31 |
 | [src/cn/nuaa/edu/acwing/DoublePointer.java](/src/cn/nuaa/edu/acwing/DoublePointer.java) | Java | 15 | 6 | 5 | 26 |
-| [src/cn/nuaa/edu/acwing/FrontPrefixSum.java](/src/cn/nuaa/edu/acwing/FrontPrefixSum.java) | Java | 14 | 7 | 2 | 23 |
+| [src/cn/nuaa/edu/acwing/FrontPrefixSum.java](/src/cn/nuaa/edu/acwing/FrontPrefixSum.java) | Java | 16 | 7 | 2 | 25 |
 | [src/cn/nuaa/edu/acwing/Knaspack01.java](/src/cn/nuaa/edu/acwing/Knaspack01.java) | Java | 25 | 5 | 8 | 38 |
 | [src/cn/nuaa/edu/acwing/KnaspackMulti.java](/src/cn/nuaa/edu/acwing/KnaspackMulti.java) | Java | 26 | 5 | 6 | 37 |
 | [src/cn/nuaa/edu/acwing/KnaspackTotal.java](/src/cn/nuaa/edu/acwing/KnaspackTotal.java) | Java | 24 | 5 | 6 | 35 |
+| [src/cn/nuaa/edu/acwing/MergeDemo.java](/src/cn/nuaa/edu/acwing/MergeDemo.java) | Java | 29 | 8 | 6 | 43 |
 | [src/cn/nuaa/edu/acwing/MergeSort.java](/src/cn/nuaa/edu/acwing/MergeSort.java) | Java | 43 | 6 | 8 | 57 |
 | [src/cn/nuaa/edu/acwing/QucikSort.java](/src/cn/nuaa/edu/acwing/QucikSort.java) | Java | 35 | 6 | 7 | 48 |
+| [src/cn/nuaa/edu/acwing/StoneMerge.java](/src/cn/nuaa/edu/acwing/StoneMerge.java) | Java | 27 | 6 | 3 | 36 |
 | [src/cn/nuaa/edu/acwing/TrieDemo.java](/src/cn/nuaa/edu/acwing/TrieDemo.java) | Java | 5 | 5 | 3 | 13 |
 | [src/cn/nuaa/edu/acwing/basic/BFSDemo.java](/src/cn/nuaa/edu/acwing/basic/BFSDemo.java) | Java | 50 | 11 | 12 | 73 |
 | [src/cn/nuaa/edu/acwing/basic/DFSDemo.java](/src/cn/nuaa/edu/acwing/basic/DFSDemo.java) | Java | 29 | 5 | 6 | 40 |
@@ -104,13 +97,17 @@ Total : 216 files,  7869 codes, 1825 comments, 1155 blanks, all 10849 lines
 | [src/cn/nuaa/edu/leetcode/LeetCode1498.java](/src/cn/nuaa/edu/leetcode/LeetCode1498.java) | Java | 24 | 9 | 3 | 36 |
 | [src/cn/nuaa/edu/leetcode/LeetCode1499.java](/src/cn/nuaa/edu/leetcode/LeetCode1499.java) | Java | 25 | 9 | 9 | 43 |
 | [src/cn/nuaa/edu/leetcode/LeetCode1553.java](/src/cn/nuaa/edu/leetcode/LeetCode1553.java) | Java | 27 | 12 | 7 | 46 |
+| [src/cn/nuaa/edu/leetcode/LeetCode1557.java](/src/cn/nuaa/edu/leetcode/LeetCode1557.java) | Java | 64 | 6 | 7 | 77 |
+| [src/cn/nuaa/edu/leetcode/LeetCode1558.java](/src/cn/nuaa/edu/leetcode/LeetCode1558.java) | Java | 28 | 5 | 5 | 38 |
 | [src/cn/nuaa/edu/leetcode/LeetCode1561.java](/src/cn/nuaa/edu/leetcode/LeetCode1561.java) | Java | 13 | 5 | 3 | 21 |
+| [src/cn/nuaa/edu/leetcode/LeetCode1563.java](/src/cn/nuaa/edu/leetcode/LeetCode1563.java) | Java | 32 | 11 | 6 | 49 |
 | [src/cn/nuaa/edu/leetcode/LeetCode239.java](/src/cn/nuaa/edu/leetcode/LeetCode239.java) | Java | 31 | 5 | 5 | 41 |
 | [src/cn/nuaa/edu/leetcode/Leetcode113.java](/src/cn/nuaa/edu/leetcode/Leetcode113.java) | Java | 40 | 7 | 5 | 52 |
 | [src/cn/nuaa/edu/leetcode/Leetcode1375.java](/src/cn/nuaa/edu/leetcode/Leetcode1375.java) | Java | 14 | 5 | 2 | 21 |
 | [src/cn/nuaa/edu/leetcode/Leetcode1451.java](/src/cn/nuaa/edu/leetcode/Leetcode1451.java) | Java | 34 | 5 | 5 | 44 |
 | [src/cn/nuaa/edu/leetcode/Leetcode14512.java](/src/cn/nuaa/edu/leetcode/Leetcode14512.java) | Java | 29 | 6 | 6 | 41 |
 | [src/cn/nuaa/edu/leetcode/Leetcode1452.java](/src/cn/nuaa/edu/leetcode/Leetcode1452.java) | Java | 35 | 8 | 3 | 46 |
+| [src/cn/nuaa/edu/leetcode/Leetcode1461.java](/src/cn/nuaa/edu/leetcode/Leetcode1461.java) | Java | 10 | 5 | 1 | 16 |
 | [src/cn/nuaa/edu/leetcode/Leetcode1481.java](/src/cn/nuaa/edu/leetcode/Leetcode1481.java) | Java | 39 | 7 | 5 | 51 |
 | [src/cn/nuaa/edu/leetcode/Leetcode1493.java](/src/cn/nuaa/edu/leetcode/Leetcode1493.java) | Java | 21 | 6 | 4 | 31 |
 | [src/cn/nuaa/edu/leetcode/Leetcode14932.java](/src/cn/nuaa/edu/leetcode/Leetcode14932.java) | Java | 54 | 8 | 6 | 68 |
@@ -207,6 +204,8 @@ Total : 216 files,  7869 codes, 1825 comments, 1155 blanks, all 10849 lines
 | [src/cn/nuaa/edu/stream/ForkJoinDemo.java](/src/cn/nuaa/edu/stream/ForkJoinDemo.java) | Java | 40 | 5 | 6 | 51 |
 | [src/cn/nuaa/edu/stream/StreamDemo.java](/src/cn/nuaa/edu/stream/StreamDemo.java) | Java | 74 | 8 | 14 | 96 |
 | [src/cn/nuaa/edu/stream/User.java](/src/cn/nuaa/edu/stream/User.java) | Java | 20 | 10 | 7 | 37 |
+| [src/cn/nuaa/edu/test/AtomicDemo.java](/src/cn/nuaa/edu/test/AtomicDemo.java) | Java | 10 | 5 | 4 | 19 |
+| [src/cn/nuaa/edu/test/AtomicDemoTest.java](/src/cn/nuaa/edu/test/AtomicDemoTest.java) | Java | 10 | 5 | 6 | 21 |
 | [src/cn/nuaa/edu/test/BigDecimalDemo.java](/src/cn/nuaa/edu/test/BigDecimalDemo.java) | Java | 20 | 8 | 7 | 35 |
 | [src/cn/nuaa/edu/test/DFSDemo.java](/src/cn/nuaa/edu/test/DFSDemo.java) | Java | 33 | 13 | 11 | 57 |
 | [src/cn/nuaa/edu/test/DequeDemo.java](/src/cn/nuaa/edu/test/DequeDemo.java) | Java | 19 | 13 | 8 | 40 |
@@ -215,6 +214,7 @@ Total : 216 files,  7869 codes, 1825 comments, 1155 blanks, all 10849 lines
 | [src/cn/nuaa/edu/test/FastPower.java](/src/cn/nuaa/edu/test/FastPower.java) | Java | 27 | 6 | 4 | 37 |
 | [src/cn/nuaa/edu/test/GcdDemo.java](/src/cn/nuaa/edu/test/GcdDemo.java) | Java | 15 | 5 | 4 | 24 |
 | [src/cn/nuaa/edu/test/Graph.java](/src/cn/nuaa/edu/test/Graph.java) | Java | 38 | 6 | 4 | 48 |
+| [src/cn/nuaa/edu/test/MapSortByValue.java](/src/cn/nuaa/edu/test/MapSortByValue.java) | Java | 35 | 11 | 7 | 53 |
 | [src/cn/nuaa/edu/test/PriorityQueue.java](/src/cn/nuaa/edu/test/PriorityQueue.java) | Java | 26 | 7 | 6 | 39 |
 | [src/cn/nuaa/edu/test/QueueTest.java](/src/cn/nuaa/edu/test/QueueTest.java) | Java | 12 | 5 | 5 | 22 |
 | [src/cn/nuaa/edu/test/SerializableDemo.java](/src/cn/nuaa/edu/test/SerializableDemo.java) | Java | 24 | 5 | 5 | 34 |
@@ -225,6 +225,8 @@ Total : 216 files,  7869 codes, 1825 comments, 1155 blanks, all 10849 lines
 | [src/cn/nuaa/edu/test/ThreadDemo.java](/src/cn/nuaa/edu/test/ThreadDemo.java) | Java | 24 | 6 | 4 | 34 |
 | [src/cn/nuaa/edu/test/ThreadTest.java](/src/cn/nuaa/edu/test/ThreadTest.java) | Java | 33 | 15 | 7 | 55 |
 | [src/cn/nuaa/edu/test/TreeMapDemo.java](/src/cn/nuaa/edu/test/TreeMapDemo.java) | Java | 24 | 5 | 6 | 35 |
+| [src/cn/nuaa/edu/test/UnitDemo.java](/src/cn/nuaa/edu/test/UnitDemo.java) | Java | 10 | 6 | 4 | 20 |
+| [src/cn/nuaa/edu/test/UnitDemoTest.java](/src/cn/nuaa/edu/test/UnitDemoTest.java) | Java | 27 | 6 | 8 | 41 |
 | [src/cn/nuaa/edu/test/UnitTest.java](/src/cn/nuaa/edu/test/UnitTest.java) | Java | 35 | 5 | 9 | 49 |
 | [src/cn/nuaa/edu/test/WaitDemo.java](/src/cn/nuaa/edu/test/WaitDemo.java) | Java | 43 | 7 | 5 | 55 |
 
