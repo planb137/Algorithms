@@ -15,6 +15,7 @@ public class YueshuCounts {
         int n = sc.nextInt();
         long res = 1;
         long mod = (long) 1e9 + 7;
+        //存放质因数，以及对应的个数
         Map<Integer, Long> map = new HashMap<>();
         for (int i = 0; i < n; i++) {
             int x = sc.nextInt();
