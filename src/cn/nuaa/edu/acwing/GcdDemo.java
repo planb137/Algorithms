@@ -17,7 +17,7 @@ public class GcdDemo {
     }
 
     public static void main(String[] args) {
-        System.out.println(gcd(6, 8));
+        System.out.println(gcd(123456, 7890));
         System.out.println(lcm(6, 8));
     }
 }
