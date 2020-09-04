@@ -1,5 +1,6 @@
 package nuaa.edu.acwing;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -19,7 +20,7 @@ public class TreeCenter {
     static boolean st[] = new boolean[N];
     static int n = -1;
 
-    //添加邻接表的边
+    // 添加邻接表的边
     static void add(int a, int b)
     {
         e[idx] = b;
@@ -49,9 +50,7 @@ public class TreeCenter {
     public static void main(String[] args)
     {
         n = in.nextInt();
-        for (int i = 0; i < N; i++) {
-            h[i] = -1;
-        }
+        Arrays.fill(h, -1);
         for (int i = 0; i < n - 1; i++)
         {
             int a = in.nextInt();
