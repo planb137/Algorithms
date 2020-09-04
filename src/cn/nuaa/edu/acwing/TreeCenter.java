@@ -14,45 +14,39 @@ import java.util.Scanner;
  */
 public class TreeCenter {
     static Scanner in = new Scanner(System.in);
-    static final int N = (int)1e5 + 10;
+    static final int N = (int) 1e5 + 10;
     static int h[] = new int[N], e[] = new int[N * 2], ne[] = new int[N * 2], idx = 0;
     static int ans = N;
     static boolean st[] = new boolean[N];
-    static int n = -1;
+    static int n = 0;
 
     // 添加邻接表的边
-    static void add(int a, int b)
-    {
+    static void add(int a, int b) {
         e[idx] = b;
         ne[idx] = h[a];
         h[a] = idx++;
     }
 
-    static int dfs(int u)
-    {
+    static int dfs(int u) {
         st[u] = true;
-        int sum =0, size = 0;
-        for (int i = h[u]; i != -1; i = ne[i])
-        {
+        int sum = 1, size = 0;
+        for (int i = h[u]; i != -1; i = ne[i]) {
             int j = e[i];
-            if (!st[j])
-            {
+            if (!st[j]) {
                 int s = dfs(j);
                 size = Math.max(size, s);
                 sum += s;
             }
         }
-        size = Math.max(size, n - sum - 1);
+        size = Math.max(size, n - sum);
         ans = Math.min(ans, size);
-        return sum + 1;
+        return sum;
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         n = in.nextInt();
         Arrays.fill(h, -1);
-        for (int i = 0; i < n - 1; i++)
-        {
+        for (int i = 0; i < n - 1; i++) {
             int a = in.nextInt();
             int b = in.nextInt();
             add(a, b);
