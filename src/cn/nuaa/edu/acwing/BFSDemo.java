@@ -1,22 +1,16 @@
 package nuaa.edu.acwing;
 
-import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Scanner;
-
 /**
  * @author planb
  * @date 2020/9/5 10:28
  * 备注：bfs 模板
  */
 public class BFSDemo {
-    static int n;
     static int[] h;
     static int[] e;
     static int[] ne;
     static boolean[] st;
-    static int idx = 0;
 
     static LinkedList<Integer> q = new LinkedList<>();
 
@@ -36,6 +30,8 @@ public class BFSDemo {
     }
 
     public static void main(String[] args) {
+        q.addLast(1);
+        st[1] = true;
         bfs();
     }
 }
