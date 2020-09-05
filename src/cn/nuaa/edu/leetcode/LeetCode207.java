@@ -14,23 +14,23 @@ import java.util.LinkedList;
  * 我们用一个匹配来表示他们：[0,1]，给定课程总量以及它们的先决条件，请你判断是否可能完成所有课程的学习？
  */
 public class LeetCode207 {
-    static int N = 100010;
-    static int[] e = new int[N];
-    static int[] ne = new int[N];
-    static int[] h = new int[N];
-    static int[] d = new int[N];
-    static int idx = 0;
-    static int times = 0;
-    static int n = 0;
-    static LinkedList<Integer> q = new LinkedList<>();
+     int N = 100010;
+     int[] e = new int[N];
+     int[] ne = new int[N];
+     int[] h = new int[N];
+     int[] d = new int[N];
+     int idx = 0;
+     int times = 0;
+     int n = 0;
+     LinkedList<Integer> q = new LinkedList<>();
 
-    static void add(int a, int b) {
+     void add(int a, int b) {
         e[idx] = b;
         ne[idx] = h[a];
         h[a] = idx++;
     }
 
-    static boolean topSort() {
+     boolean topSort() {
         for (int i = 0; i < n; i++) {
             if (d[i] == 0) {
                 q.addLast(i);
