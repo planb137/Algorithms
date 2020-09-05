@@ -11,7 +11,7 @@ import java.util.Scanner;
  * 给定一个n个点m条边的有向图，图中可能存在重边和自环。 所有边的长度都是1，点的编号为1~n。
  * 请你求出1号点到n号点的最短距离，如果从1号点无法走到n号点，输出-1。
  */
-public class PointDisDFS {
+public class PointDisBFS {
     static int n;
     static int N = 100010;
     static int[] e = new int[N];
