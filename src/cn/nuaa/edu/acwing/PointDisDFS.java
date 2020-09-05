@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * @author planb
  * @date 2020/9/5 12:05
- * 备注：图中点的层次，BFS求最短距离
+ * 备注：acwing - 图中点的层次，BFS求最短距离(bfs借助队列实现)
  */
 public class PointDisDFS {
     static int n;
@@ -25,12 +25,12 @@ public class PointDisDFS {
         h[x] = idx++;
     }
 
-    static int dfs() {
+    static int bfs() {
         d[1] = 0;
         while (!q.isEmpty()) {
             int t = q.peekFirst();
             q.pollFirst();
-            for (int i = h[t]; i != -1; i = ne[t]) {
+            for (int i = h[t]; i != -1; i = ne[i]) {
                 int s = e[i];
                 if (d[s] == -1) {
                     d[s] = d[t] + 1;
@@ -53,6 +53,6 @@ public class PointDisDFS {
             add(a, b);
         }
         q.addLast(1);
-        System.out.println(dfs());
+        System.out.println(bfs());
     }
 }
