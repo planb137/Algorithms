@@ -1,6 +1,4 @@
-package nuaa.edu.cas;
-
-import java.util.concurrent.ThreadPoolExecutor;
+package nuaa.edu.designPattern.SingetonPattern;
 
 /**
  * @author planb
