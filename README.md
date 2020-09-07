@@ -8,4 +8,5 @@
 ### jvm包：java8 jvm、gc代码
 ### reflect包：java反射练习代码
 ### cas包：javaCAS、atomic代码
+### designPattern 面向对象设计模式篇
 ### VSCodeCounter 代码计数器
