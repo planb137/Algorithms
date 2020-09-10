@@ -3,8 +3,10 @@ package nuaa.edu.nowcoder.ali;
 /**
  * @author planb
  * @date 2020/9/8 08:56
- * 备注：alibaba 面试题目
+ * 备注：alibaba 面试题目（比较两个泛型数组）
  */
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * * 阿里巴巴有上万名程序员，层级不一，用法和解决的问题也不一。
@@ -22,20 +24,39 @@ package nuaa.edu.nowcoder.ali;
 
 public class ArrayUtils {
     public static <T> boolean isEquals(T[] src, T[] dst) {
-        int n = src.length;
+        if (src == null || dst == null) {
+            return false;
+        }
         if (src.length != dst.length) {
             return false;
-        } else {
-            for (int i = 0; i < n; i++) {
+        }
+        for (int i = 0; i < src.length; i++) {
+            if (src[i] == null && dst[i] != null) {
+                return false;
+            } else if (src[i] != null && dst[i] == null) {
+                return false;
+            } else {
+                if (src[i] == null && dst[i] == null) {
+                    continue;
+                }
                 if (src[i].getClass() != dst[i].getClass()) {
                     return false;
-                } else if (!src[i].equals(dst[i])) {
+                }
+                if (!src[i].equals(dst[i])) {
                     return false;
                 }
-
             }
-            return true;
         }
+        return true;
+    }
 
+    public static void main(String[] args) {
+        int s = 9;
+        Integer t = 9;
+        System.out.println();
+        System.out.println(t instanceof Integer);
+        System.out.println(int[].class);
+        AtomicInteger ai = new AtomicInteger();
+        //ai.compareAndSet()
     }
 }
