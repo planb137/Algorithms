@@ -1,4 +1,4 @@
-package cn.nuaa.edu.juc;
+package nuaa.edu.juc;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
