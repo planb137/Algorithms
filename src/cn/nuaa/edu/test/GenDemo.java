@@ -31,16 +31,9 @@ class Cat extends Animal{
 
 }
 public class GenDemo {
-    static int countLegs (List<? extends Animal > animals ) {
-        int retVal = 0;
-        for ( Animal animal : animals )
-        {
-            retVal += animal.countLegs();
-        }
-        return retVal;
-    }
 
-    static int countLegs1 (List< Animal > animals ){
+    // 上界通配符 List<? extends Animal >
+    static int countLegs (List<? extends Animal> animals ) {
         int retVal = 0;
         for ( Animal animal : animals )
         {
@@ -48,11 +41,25 @@ public class GenDemo {
         }
         return retVal;
     }
-    private <T> void test(List<? super T> dst, List<T> src){
+    static void test(Animal animal){
+        System.out.println(animal.countLegs());
+    }
+    //此方法只能传animal，不能传其子类
+    static int countLegs1 (List<Animal> animals ){
+        int retVal = 0;
+        for ( Animal animal : animals )
+        {
+            retVal += animal.countLegs();
+        }
+        return retVal;
+    }
+    //下界通配符 < ? super E>
+    static <T> void add(List<? super T> dst, List<T> src){
         for (T t : src) {
             dst.add(t);
         }
     }
+
     public static void main(String[] args) {
             List<Dog> dogs = new ArrayList<>();
             dogs.add(new Dog());
@@ -66,8 +73,10 @@ public class GenDemo {
             System.out.println(countLegs(cats));
              // 报错 countLegs1(dogs);
 
-
         List<Animal> animals = new ArrayList<>();
-        new GenDemo().test(animals,dogs);
+        new GenDemo();
+        GenDemo.add(animals,dogs);
+
+        GenDemo.test(new Dog());
     }
 }
