@@ -1,4 +1,4 @@
-package cn.nuaa.edu.test;
+package nuaa.edu.test;
 
 import java.util.LinkedList;
 
@@ -16,6 +16,7 @@ public class QueueTest {
 
         System.out.println(queue.poll());
         System.out.println(queue.toString());
+        String s = new String(" ");
 
     }
 }
