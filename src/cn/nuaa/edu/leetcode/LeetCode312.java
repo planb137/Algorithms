@@ -3,7 +3,7 @@ package nuaa.edu.leetcode;
 /**
  * @author planb
  * @date 2020/9/11 13:48
- * 备注：leetcode 312. 戳气球
+ * 备注：leetcode 312. 戳气球（区间DP），可以对比leetcode石子游戏
  * 有 n 个气球，编号为0 到 n-1，每个气球上都标有一个数字，这些数字存在数组 nums 中。
  *
  * 现在要求你戳破所有的气球。如果你戳破气球 i ，就可以获得 nums[left] * nums[i] * nums[right] 个硬币。
