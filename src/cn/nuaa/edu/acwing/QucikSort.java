@@ -24,25 +24,20 @@ public class QucikSort {
                 num[j] = temp;
             }
         }
-
         sort(num, l, j);
         sort(num, j + 1, r);
-        for (Integer xwee : num) {
-
-        }
-
     }
 
     public static void main(String[] args) {
-        // int[] num = {3, 4, 1, -2, 0, 8};
-        Scanner in = new Scanner(System.in);
+        int[] arr = {3, 4, 1, -2, 0, 8};
+      /*  Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             arr[i] = in.nextInt();
         }
-
-        sort(arr, 0, n - 1);
+*/
+        sort(arr, 0, 5);
         for (int x : arr) {
             System.out.print(x + " ");
         }
