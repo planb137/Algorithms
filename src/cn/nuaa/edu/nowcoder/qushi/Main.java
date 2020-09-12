@@ -1,4 +1,4 @@
-package edu.acwing;
+package nuaa.edu.nowcoder.qushi;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
  * @author planb
  * @date 2020/9/5 13:01
- * 备注：输出所有拓扑序列（bfs队列实现）
+ * 备注：趋势科技笔试 - 拓扑序列（bfs队列实现）
  */
 public class Main {
     static int N = 100010;
