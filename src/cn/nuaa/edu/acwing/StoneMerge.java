@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * @author planb
  * @date 2020/8/28 09:12
- * 备注：石子合并 (区间DP)
+ * 备注：石子合并 (区间DP) 对比：leetcode 312. 戳气球（区间DP）
  */
 public class StoneMerge {
     public static void main(String[] args) {
