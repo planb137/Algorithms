@@ -1,14 +1,11 @@
 package nuaa.edu.nowcoder.qushi;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * @author planb
  * @date 2020/9/5 13:01
- * 备注：趋势科技笔试 - 拓扑序列（bfs队列实现）
+ * 备注：趋势科技笔试 - 拓扑序列（bfs 优先队列实现）
  */
 public class Main {
     static int N = 100010;
@@ -18,7 +15,8 @@ public class Main {
     static int[] d = new int[N];
     static int n = 0;
     static int idx = 0;
-    static LinkedList<Integer> q = new LinkedList<>();
+    static PriorityQueue<Integer> q = new PriorityQueue<>();
+    //static LinkedList<Integer> q = new LinkedList<>();
 
     static void add(int a, int b) {
         e[idx] = b;
@@ -30,18 +28,21 @@ public class Main {
         StringBuilder res = new StringBuilder();
         for (int i = 0; i < n; i++) {
             if (d[i] == 0) {
-                q.addLast(i);
+                q.add(i);
+                //q.addLast(i);
             }
         }
         while (!q.isEmpty()) {
-            int s = q.peekFirst();
-            q.pollFirst();
+            //int s = q.peekFirst();
+           // q.pollFirst();
+            int s = q.poll();
             res.append(s).append(",");
             for (int i = h[s]; i != -1; i = ne[i]) {
                 int j = e[i];
                 d[j]--;
                 if (d[j] == 0) {
-                    q.addLast(j);
+                    q.add(j);
+                   // q.addLast(j);
                 }
             }
         }
