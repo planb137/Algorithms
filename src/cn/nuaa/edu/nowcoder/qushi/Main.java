@@ -34,7 +34,7 @@ public class Main {
         }
         while (!q.isEmpty()) {
             //int s = q.peekFirst();
-           // q.pollFirst();
+            // q.pollFirst();
             int s = q.poll();
             res.append(s).append(",");
             for (int i = h[s]; i != -1; i = ne[i]) {
@@ -42,7 +42,7 @@ public class Main {
                 d[j]--;
                 if (d[j] == 0) {
                     q.add(j);
-                   // q.addLast(j);
+                    // q.addLast(j);
                 }
             }
         }
@@ -55,13 +55,13 @@ public class Main {
 
         n = s1.length;
         for (int i = 0; i < s1.length; i++) {
-            if(Integer.parseInt(s1[i])>=0){
+            if (Integer.parseInt(s1[i]) >= 0) {
                 add(Integer.parseInt(s1[i]), i);
                 d[i]++;
             }
         }
         String str = topSort();
-        return str.substring(0, str.length()-1);
+        return str.substring(0, str.length() - 1);
 
     }
 
