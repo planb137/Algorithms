@@ -12,6 +12,7 @@ public class DemoTest2 {
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(2);
+        
         System.out.println(list.toString());
     }
 }
