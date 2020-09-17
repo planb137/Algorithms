@@ -3,7 +3,7 @@ package nuaa.edu.nowcoder.huawei;
 /**
  * @author planb
  * @date 2020/9/17 08:13
- * 备注：华为2面
+ * 备注：华为2面（反转链表）
  */
 class ListNode {
     int val;
@@ -43,8 +43,8 @@ public class Demo12 {
 
     public static void main(String[] args) {
         ListNode node1 = new ListNode(1);
-        ListNode node2 = new ListNode(2);
-        ListNode node3 = new ListNode(3);
+        ListNode node2 = new ListNode(3);
+        ListNode node3 = new ListNode(2);
         ListNode node4 = new ListNode(4);
         node1.setNext(node2);
         node2.setNext(node3);
