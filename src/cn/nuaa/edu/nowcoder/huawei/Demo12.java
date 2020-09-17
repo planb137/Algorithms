@@ -1,9 +1,10 @@
 package nuaa.edu.nowcoder.huawei;
 
+
 /**
  * @author planb
  * @date 2020/9/17 08:13
- * 备注：华为2面（反转链表）
+ * 备注：华为2面（反转链表-递归写法）
  */
 class ListNode {
     int val;
