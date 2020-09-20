@@ -47,7 +47,7 @@ public class Demo34 {
     }
 
     public static Node2 f(Node2 root, Node2 p, Node2 q) {
-        if (root == null || p == null || q == null) {
+        if (root == null || p == root || q == root) {
             return root;
         }
         Node2 l = f(root.left, p, q);
@@ -71,7 +71,9 @@ public class Demo34 {
         Node2 node2 = new Node2(2, node4, node5);
         Node2 root = new Node2(1, node2, node3);
         Node2 rs = lowestCommonAncestor(root, node4, node5);
+        Node2 rs2 = f(root, node4, node5);
         System.out.println(rs.toString());
+        System.out.println(rs2.toString());
     }
 
 }
