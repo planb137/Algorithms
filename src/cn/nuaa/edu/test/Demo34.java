@@ -3,7 +3,7 @@ package nuaa.edu.test;
 /**
  * @author planb
  * @date 2020/9/20 16:29
- * 备注：
+ * 备注：字节面试2020年9月20日
  */
 class Node2 {
     Node2 left;
