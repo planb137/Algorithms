@@ -6,7 +6,7 @@ import java.util.LinkedList;
 /**
  * @author planb
  * @date 2020/9/21 17:37
- * 备注：招银网络科技面试
+ * 备注：招银网络科技面试（层次遍历二叉树）
  */
 public class Demo35 {
     class TreeNode {
