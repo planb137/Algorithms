@@ -6,7 +6,8 @@ import java.util.Scanner;
 /**
  * @author planb
  * @date 2020/8/7 15:08
- * 备注：匈牙利算法：若两个正整数的和为素数，则这两个正整数称之为“素数伴侣”
+ * 备注：匈牙利算法：若两个正整数的和为素数，则这两个正整数称之为“素数伴侣”；
+ * 二分图的最大匹配问题：匈牙利算法。一般图的最大匹配：开花树算法
  */
 public class HungaryAlgorithm {
     public static void main(String[] args) {
